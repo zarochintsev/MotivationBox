@@ -16,7 +16,8 @@ final class ApplicationAssembly {
     /// Use default dependency
     class var assembler: Assembler {
         return Assembler([
-            MotivationsAssembly()
+            MotivationsAssembly(),
+            MainAssembly()
         ])
     }
     
@@ -32,6 +33,17 @@ extension SwinjectStoryboard {
     
     public static func setup() {
         defaultContainer = ApplicationAssembly.assembler.resolver as! Container
+    }
+    
+}
+
+
+class MainAssembly: Assembly {
+    
+    func assemble(container: Container) {
+        container.register(NotificationService.self) { (r: Resolver) in
+            return NotificationServiceImpl()
+        }
     }
     
 }
