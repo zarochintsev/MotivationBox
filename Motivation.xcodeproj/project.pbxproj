@@ -32,6 +32,8 @@
 		FA140F021F08DFE2007A3ADD /* String+Localization.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA140F011F08DFE2007A3ADD /* String+Localization.swift */; };
 		FA140F071F08E0D7007A3ADD /* NSObject+ClassName.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA140F061F08E0D7007A3ADD /* NSObject+ClassName.swift */; };
 		FA140F0B1F08E2B9007A3ADD /* LocalizationConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA140F0A1F08E2B9007A3ADD /* LocalizationConstants.swift */; };
+		FA2F474F1F09605C007C3424 /* NotificationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA2F474E1F09605C007C3424 /* NotificationService.swift */; };
+		FA2F47511F09609A007C3424 /* NotificationServiceImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA2F47501F09609A007C3424 /* NotificationServiceImpl.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -66,6 +68,8 @@
 		FA140F0A1F08E2B9007A3ADD /* LocalizationConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocalizationConstants.swift; sourceTree = "<group>"; };
 		FA140F101F094C34007A3ADD /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		FA140F111F094C34007A3ADD /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Localizable.strings; sourceTree = "<group>"; };
+		FA2F474E1F09605C007C3424 /* NotificationService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationService.swift; sourceTree = "<group>"; };
+		FA2F47501F09609A007C3424 /* NotificationServiceImpl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationServiceImpl.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -174,6 +178,7 @@
 		FA140EB71F080B43007A3ADD /* BusinessLogicLayer */ = {
 			isa = PBXGroup;
 			children = (
+				FA2F474C1F09605C007C3424 /* Services */,
 			);
 			path = BusinessLogicLayer;
 			sourceTree = "<group>";
@@ -379,6 +384,23 @@
 			path = LocalizationConstants;
 			sourceTree = "<group>";
 		};
+		FA2F474C1F09605C007C3424 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				FA2F474D1F09605C007C3424 /* NotificationService */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		FA2F474D1F09605C007C3424 /* NotificationService */ = {
+			isa = PBXGroup;
+			children = (
+				FA2F474E1F09605C007C3424 /* NotificationService.swift */,
+				FA2F47501F09609A007C3424 /* NotificationServiceImpl.swift */,
+			);
+			path = NotificationService;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -512,7 +534,9 @@
 				FA140EF91F081817007A3ADD /* ApplicationAssembly.swift in Sources */,
 				FA140ECD1F080BF4007A3ADD /* MotivationsRouter.swift in Sources */,
 				FA140EF41F081505007A3ADD /* MotivationCollectionViewCell.swift in Sources */,
+				FA2F474F1F09605C007C3424 /* NotificationService.swift in Sources */,
 				FA140ECF1F080BFD007A3ADD /* MotivationsRouterInput.swift in Sources */,
+				FA2F47511F09609A007C3424 /* NotificationServiceImpl.swift in Sources */,
 				FA140ED51F080C53007A3ADD /* MotivationsAssembly.swift in Sources */,
 				FA140ECB1F080BB6007A3ADD /* MotivationsViewController.swift in Sources */,
 				FA140F0B1F08E2B9007A3ADD /* LocalizationConstants.swift in Sources */,
