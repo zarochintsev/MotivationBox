@@ -70,6 +70,7 @@
 		FA140F111F094C34007A3ADD /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Localizable.strings; sourceTree = "<group>"; };
 		FA2F474E1F09605C007C3424 /* NotificationService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationService.swift; sourceTree = "<group>"; };
 		FA2F47501F09609A007C3424 /* NotificationServiceImpl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationServiceImpl.swift; sourceTree = "<group>"; };
+		FA42EAE11F097E690053BA08 /* Motivation.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Motivation.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -125,6 +126,7 @@
 				FA140EB11F080B43007A3ADD /* Classes */,
 				FA140EDE1F08126B007A3ADD /* Resources */,
 				FA140EA91F07F4A7007A3ADD /* Info.plist */,
+				FA42EAE11F097E690053BA08 /* Motivation.entitlements */,
 			);
 			path = Motivation;
 			sourceTree = "<group>";
@@ -438,6 +440,11 @@
 						CreatedOnToolsVersion = 8.3.3;
 						DevelopmentTeam = V7Y4KEU8VJ;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Push = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -678,6 +685,7 @@
 			baseConfigurationReference = B88FF43ACFBA4CC95FFAC73D /* Pods-Motivation.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Motivation/Motivation.entitlements;
 				DEVELOPMENT_TEAM = V7Y4KEU8VJ;
 				INFOPLIST_FILE = Motivation/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
@@ -693,6 +701,7 @@
 			baseConfigurationReference = 30508BF475DF366609AD9D99 /* Pods-Motivation.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Motivation/Motivation.entitlements;
 				DEVELOPMENT_TEAM = V7Y4KEU8VJ;
 				INFOPLIST_FILE = Motivation/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
