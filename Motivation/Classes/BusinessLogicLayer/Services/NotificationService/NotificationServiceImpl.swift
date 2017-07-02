@@ -18,13 +18,13 @@ class NotificationServiceImpl: NotificationService {
     }
     
     func schedule(localPush: LocalPushNotification) {
-        let notification = UILocalNotification()
-        notification.alertTitle = localPush.title
-        notification.alertBody = localPush.text
-        notification.fireDate = localPush.fire
-        notification.soundName = UILocalNotificationDefaultSoundName
-        notification.userInfo = localPush.userInfo
-        UIApplication.shared.scheduleLocalNotification(notification)
+        let localNotification = UILocalNotification()
+        localNotification.soundName = UILocalNotificationDefaultSoundName
+        localNotification.alertTitle = localPush.title
+        localNotification.alertBody = localPush.text
+        localNotification.fireDate = localPush.fire
+        
+        UIApplication.shared.scheduleLocalNotification(localNotification)
     }
     
     func resetAllNotifications() {

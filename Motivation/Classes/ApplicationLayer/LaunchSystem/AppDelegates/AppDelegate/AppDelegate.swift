@@ -50,7 +50,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             return Calendar.current.date(byAdding: .day, value: 1, to: today)!
         }
         
-        let local = LocalPushNotification(title: LS.LocalNotification.title.localized(), text: LS.LocalNotification.text.localized(), fire: fireDate(), userInfo: [:])
+        let local = LocalPushNotification(
+            title: LS.LocalNotification.title.localized(),
+            text: LS.LocalNotification.text.localized(),
+            fire: fireDate())
         notificationService.schedule(localPush: local)
     }
     

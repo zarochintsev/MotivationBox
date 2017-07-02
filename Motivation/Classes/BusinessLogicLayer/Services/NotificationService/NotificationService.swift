@@ -10,10 +10,15 @@ import UIKit
 import Foundation
 
 struct LocalPushNotification {
+    
+    /// Title
     let title: String
+    
+    /// Message
     let text: String
+    
+    /// Fire date
     let fire: Date
-    let userInfo: [AnyHashable : Any]
 }
 
 protocol NotificationService {
