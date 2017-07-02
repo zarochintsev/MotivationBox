@@ -9,6 +9,9 @@
 "Common.Day" = "Day";
 "Motivations.NewMotivation" = "New motivation will be available tomorrow!";
 
+"LocalNotification.Title" = "New motivation is ready";
+"LocalNotification.Text" = "Check it out";
+
 
 "167" = "A leader is one who knows the way, goes the way, and shows the way.\n\n— John Maxwell";
 
