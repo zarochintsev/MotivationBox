@@ -36,6 +36,22 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func applicationDidEnterBackground(_ application: UIApplication) {
         // Use this method to release shared resources, save user data, invalidate timers, and store enough application state information to restore your application to its current state in case it is terminated later.
         // If your application supports background execution, this method is called instead of applicationWillTerminate: when the user quits.
+        
+        func fireDate() -> Date {
+            let dateFormatter = DateFormatter()
+            dateFormatter.timeZone = NSTimeZone.local
+            dateFormatter.dateFormat = "yyyy-MM-dd"
+            
+            let stringDate = dateFormatter.string(from: Date()).appending(" 10:00:00 Z")
+            
+            dateFormatter.dateFormat = "yyyy-MM-dd HH:mm:ss Z"
+            let today = dateFormatter.date(from: stringDate)!
+            
+            return Calendar.current.date(byAdding: .day, value: 1, to: today)!
+        }
+        
+        let local = LocalPushNotification(title: LS.LocalNotification.title.localized(), text: LS.LocalNotification.text.localized(), fire: fireDate(), userInfo: [:])
+        notificationService.schedule(localPush: local)
     }
     
     func applicationWillEnterForeground(_ application: UIApplication) {
@@ -44,10 +60,23 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     func applicationDidBecomeActive(_ application: UIApplication) {
         // Restart any tasks that were paused (or not yet started) while the application was inactive. If the application was previously in the background, optionally refresh the user interface.
+        notificationService.resetAllNotifications()
     }
     
     func applicationWillTerminate(_ application: UIApplication) {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
+    }
+    
+    func application(_ application: UIApplication, didRegisterForRemoteNotificationsWithDeviceToken deviceToken: Data) {
+        
+    }
+    
+    func application(_ application: UIApplication, didReceive notification: UILocalNotification) {
+        
+    }
+    
+    func application(_ application: UIApplication, didReceiveRemoteNotification userInfo: [AnyHashable : Any]) {
+        
     }
     
 }
