@@ -1,0 +1,19 @@
+PODS:
+  - LightRoute (1.0.6)
+  - Swinject (2.1.0)
+  - SwinjectStoryboard (1.1.1):
+    - Swinject (~> 2.0)
+
+DEPENDENCIES:
+  - LightRoute (~> 1.0)
+  - Swinject (~> 2.1)
+  - SwinjectStoryboard (~> 1.1)
+
+SPEC CHECKSUMS:
+  LightRoute: 22e06952478cba8c9898c992994777832c23a5cb
+  Swinject: 85e468ac75c5c2d234076f98c591d57d56bc64bc
+  SwinjectStoryboard: 4c71c25f312322844d39ee06f0f523db7b9b10a3
+
+PODFILE CHECKSUM: 4b57bb9514481ec2829502d8379f2eaef32d230e
+
+COCOAPODS: 1.2.1

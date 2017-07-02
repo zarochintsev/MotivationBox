@@ -7,21 +7,65 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		FA140E9E1F07F4A7007A3ADD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA140E9D1F07F4A7007A3ADD /* AppDelegate.swift */; };
-		FA140EA01F07F4A7007A3ADD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA140E9F1F07F4A7007A3ADD /* ViewController.swift */; };
-		FA140EA31F07F4A7007A3ADD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA140EA11F07F4A7007A3ADD /* Main.storyboard */; };
-		FA140EA51F07F4A7007A3ADD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA140EA41F07F4A7007A3ADD /* Assets.xcassets */; };
-		FA140EA81F07F4A7007A3ADD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA140EA61F07F4A7007A3ADD /* LaunchScreen.storyboard */; };
+		F433064172FC29E5A0B1CC47 /* Pods_Motivation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73FD7EDBD84CC31DE629B855 /* Pods_Motivation.framework */; };
+		FA140EC31F080B43007A3ADD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA140EB61F080B43007A3ADD /* AppDelegate.swift */; };
+		FA140EC51F080B5E007A3ADD /* Root.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA140EC41F080B5E007A3ADD /* Root.storyboard */; };
+		FA140EC71F080B66007A3ADD /* Launch.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA140EC61F080B66007A3ADD /* Launch.storyboard */; };
+		FA140EC91F080BA7007A3ADD /* Motivations.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA140EC81F080BA7007A3ADD /* Motivations.storyboard */; };
+		FA140ECB1F080BB6007A3ADD /* MotivationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA140ECA1F080BB6007A3ADD /* MotivationsViewController.swift */; };
+		FA140ECD1F080BF4007A3ADD /* MotivationsRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA140ECC1F080BF4007A3ADD /* MotivationsRouter.swift */; };
+		FA140ECF1F080BFD007A3ADD /* MotivationsRouterInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA140ECE1F080BFD007A3ADD /* MotivationsRouterInput.swift */; };
+		FA140ED11F080C1E007A3ADD /* MotivationsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA140ED01F080C1E007A3ADD /* MotivationsPresenter.swift */; };
+		FA140ED31F080C2E007A3ADD /* MotivationsInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA140ED21F080C2E007A3ADD /* MotivationsInteractor.swift */; };
+		FA140ED51F080C53007A3ADD /* MotivationsAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA140ED41F080C53007A3ADD /* MotivationsAssembly.swift */; };
+		FA140ED71F080C65007A3ADD /* MotivationsViewInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA140ED61F080C65007A3ADD /* MotivationsViewInput.swift */; };
+		FA140ED91F080C6B007A3ADD /* MotivationsViewOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA140ED81F080C6B007A3ADD /* MotivationsViewOutput.swift */; };
+		FA140EDB1F080C79007A3ADD /* MotivationsInteractorInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA140EDA1F080C79007A3ADD /* MotivationsInteractorInput.swift */; };
+		FA140EDD1F080C7F007A3ADD /* MotivationsInteractorOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA140EDC1F080C7F007A3ADD /* MotivationsInteractorOutput.swift */; };
+		FA140EE31F08126B007A3ADD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA140EDF1F08126B007A3ADD /* Assets.xcassets */; };
+		FA140EE61F081276007A3ADD /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = FA140EE81F081276007A3ADD /* InfoPlist.strings */; };
+		FA140EE91F08127C007A3ADD /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = FA140EEB1F08127C007A3ADD /* Localizable.strings */; };
+		FA140EF41F081505007A3ADD /* MotivationCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA140EF21F081505007A3ADD /* MotivationCollectionViewCell.swift */; };
+		FA140EF51F081505007A3ADD /* MotivationCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA140EF31F081505007A3ADD /* MotivationCollectionViewCell.xib */; };
+		FA140EF91F081817007A3ADD /* ApplicationAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA140EF81F081817007A3ADD /* ApplicationAssembly.swift */; };
+		FA140EFE1F082007007A3ADD /* Motivation.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA140EFD1F082007007A3ADD /* Motivation.swift */; };
+		FA140F021F08DFE2007A3ADD /* String+Localization.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA140F011F08DFE2007A3ADD /* String+Localization.swift */; };
+		FA140F071F08E0D7007A3ADD /* NSObject+ClassName.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA140F061F08E0D7007A3ADD /* NSObject+ClassName.swift */; };
+		FA140F0B1F08E2B9007A3ADD /* LocalizationConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA140F0A1F08E2B9007A3ADD /* LocalizationConstants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		30508BF475DF366609AD9D99 /* Pods-Motivation.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Motivation.release.xcconfig"; path = "Pods/Target Support Files/Pods-Motivation/Pods-Motivation.release.xcconfig"; sourceTree = "<group>"; };
+		73FD7EDBD84CC31DE629B855 /* Pods_Motivation.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Motivation.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B88FF43ACFBA4CC95FFAC73D /* Pods-Motivation.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Motivation.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Motivation/Pods-Motivation.debug.xcconfig"; sourceTree = "<group>"; };
 		FA140E9A1F07F4A7007A3ADD /* Motivation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Motivation.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		FA140E9D1F07F4A7007A3ADD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		FA140E9F1F07F4A7007A3ADD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		FA140EA21F07F4A7007A3ADD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		FA140EA41F07F4A7007A3ADD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		FA140EA71F07F4A7007A3ADD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FA140EA91F07F4A7007A3ADD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FA140EB61F080B43007A3ADD /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		FA140EC41F080B5E007A3ADD /* Root.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Root.storyboard; sourceTree = "<group>"; };
+		FA140EC61F080B66007A3ADD /* Launch.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Launch.storyboard; sourceTree = "<group>"; };
+		FA140EC81F080BA7007A3ADD /* Motivations.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Motivations.storyboard; sourceTree = "<group>"; };
+		FA140ECA1F080BB6007A3ADD /* MotivationsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MotivationsViewController.swift; path = ../MotivationsViewController.swift; sourceTree = "<group>"; };
+		FA140ECC1F080BF4007A3ADD /* MotivationsRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MotivationsRouter.swift; sourceTree = "<group>"; };
+		FA140ECE1F080BFD007A3ADD /* MotivationsRouterInput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MotivationsRouterInput.swift; sourceTree = "<group>"; };
+		FA140ED01F080C1E007A3ADD /* MotivationsPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MotivationsPresenter.swift; sourceTree = "<group>"; };
+		FA140ED21F080C2E007A3ADD /* MotivationsInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MotivationsInteractor.swift; sourceTree = "<group>"; };
+		FA140ED41F080C53007A3ADD /* MotivationsAssembly.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MotivationsAssembly.swift; sourceTree = "<group>"; };
+		FA140ED61F080C65007A3ADD /* MotivationsViewInput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MotivationsViewInput.swift; path = ../MotivationsViewInput.swift; sourceTree = "<group>"; };
+		FA140ED81F080C6B007A3ADD /* MotivationsViewOutput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MotivationsViewOutput.swift; path = ../MotivationsViewOutput.swift; sourceTree = "<group>"; };
+		FA140EDA1F080C79007A3ADD /* MotivationsInteractorInput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MotivationsInteractorInput.swift; sourceTree = "<group>"; };
+		FA140EDC1F080C7F007A3ADD /* MotivationsInteractorOutput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MotivationsInteractorOutput.swift; sourceTree = "<group>"; };
+		FA140EDF1F08126B007A3ADD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FA140EE71F081276007A3ADD /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		FA140EEA1F08127C007A3ADD /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		FA140EF21F081505007A3ADD /* MotivationCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MotivationCollectionViewCell.swift; sourceTree = "<group>"; };
+		FA140EF31F081505007A3ADD /* MotivationCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MotivationCollectionViewCell.xib; sourceTree = "<group>"; };
+		FA140EF81F081817007A3ADD /* ApplicationAssembly.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApplicationAssembly.swift; sourceTree = "<group>"; };
+		FA140EFD1F082007007A3ADD /* Motivation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Motivation.swift; sourceTree = "<group>"; };
+		FA140F011F08DFE2007A3ADD /* String+Localization.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Localization.swift"; sourceTree = "<group>"; };
+		FA140F061F08E0D7007A3ADD /* NSObject+ClassName.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSObject+ClassName.swift"; sourceTree = "<group>"; };
+		FA140F0A1F08E2B9007A3ADD /* LocalizationConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocalizationConstants.swift; sourceTree = "<group>"; };
+		FA140F101F094C34007A3ADD /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		FA140F111F094C34007A3ADD /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Localizable.strings; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +73,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F433064172FC29E5A0B1CC47 /* Pods_Motivation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3A7143D37DAC66E92265EEEE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				73FD7EDBD84CC31DE629B855 /* Pods_Motivation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BAAEDCC99F54A0BFC2ADB55C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B88FF43ACFBA4CC95FFAC73D /* Pods-Motivation.debug.xcconfig */,
+				30508BF475DF366609AD9D99 /* Pods-Motivation.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		FA140E911F07F4A7007A3ADD = {
 			isa = PBXGroup;
 			children = (
 				FA140E9C1F07F4A7007A3ADD /* Motivation */,
 				FA140E9B1F07F4A7007A3ADD /* Products */,
+				BAAEDCC99F54A0BFC2ADB55C /* Pods */,
+				3A7143D37DAC66E92265EEEE /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,14 +118,265 @@
 		FA140E9C1F07F4A7007A3ADD /* Motivation */ = {
 			isa = PBXGroup;
 			children = (
-				FA140E9D1F07F4A7007A3ADD /* AppDelegate.swift */,
-				FA140E9F1F07F4A7007A3ADD /* ViewController.swift */,
-				FA140EA11F07F4A7007A3ADD /* Main.storyboard */,
-				FA140EA41F07F4A7007A3ADD /* Assets.xcassets */,
-				FA140EA61F07F4A7007A3ADD /* LaunchScreen.storyboard */,
+				FA140EB11F080B43007A3ADD /* Classes */,
+				FA140EDE1F08126B007A3ADD /* Resources */,
 				FA140EA91F07F4A7007A3ADD /* Info.plist */,
 			);
 			path = Motivation;
+			sourceTree = "<group>";
+		};
+		FA140EB11F080B43007A3ADD /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				FA140EB21F080B43007A3ADD /* ApplicationLayer */,
+				FA140EB71F080B43007A3ADD /* BusinessLogicLayer */,
+				FA140EB81F080B43007A3ADD /* PresentationLayer */,
+				FA140EFC1F082007007A3ADD /* Models */,
+				FA140EFF1F08DFCF007A3ADD /* Extensions */,
+				FA140F081F08E2A5007A3ADD /* Constants */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		FA140EB21F080B43007A3ADD /* ApplicationLayer */ = {
+			isa = PBXGroup;
+			children = (
+				FA140EF61F081817007A3ADD /* Assemblies */,
+				FA140EB31F080B43007A3ADD /* LaunchSystem */,
+			);
+			path = ApplicationLayer;
+			sourceTree = "<group>";
+		};
+		FA140EB31F080B43007A3ADD /* LaunchSystem */ = {
+			isa = PBXGroup;
+			children = (
+				FA140EB41F080B43007A3ADD /* AppDelegates */,
+			);
+			path = LaunchSystem;
+			sourceTree = "<group>";
+		};
+		FA140EB41F080B43007A3ADD /* AppDelegates */ = {
+			isa = PBXGroup;
+			children = (
+				FA140EB51F080B43007A3ADD /* AppDelegate */,
+			);
+			path = AppDelegates;
+			sourceTree = "<group>";
+		};
+		FA140EB51F080B43007A3ADD /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				FA140EB61F080B43007A3ADD /* AppDelegate.swift */,
+			);
+			path = AppDelegate;
+			sourceTree = "<group>";
+		};
+		FA140EB71F080B43007A3ADD /* BusinessLogicLayer */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = BusinessLogicLayer;
+			sourceTree = "<group>";
+		};
+		FA140EB81F080B43007A3ADD /* PresentationLayer */ = {
+			isa = PBXGroup;
+			children = (
+				FA140EB91F080B43007A3ADD /* Modules */,
+				FA140EC21F080B43007A3ADD /* Storyboards */,
+			);
+			path = PresentationLayer;
+			sourceTree = "<group>";
+		};
+		FA140EB91F080B43007A3ADD /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				FA140EBA1F080B43007A3ADD /* Motivations */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		FA140EBA1F080B43007A3ADD /* Motivations */ = {
+			isa = PBXGroup;
+			children = (
+				FA140EBB1F080B43007A3ADD /* Module */,
+				FA140EC11F080B43007A3ADD /* Storyboard */,
+			);
+			path = Motivations;
+			sourceTree = "<group>";
+		};
+		FA140EBB1F080B43007A3ADD /* Module */ = {
+			isa = PBXGroup;
+			children = (
+				FA140EBC1F080B43007A3ADD /* Assembly */,
+				FA140EBD1F080B43007A3ADD /* Interactor */,
+				FA140EBE1F080B43007A3ADD /* Presenter */,
+				FA140EBF1F080B43007A3ADD /* Router */,
+				FA140EC01F080B43007A3ADD /* View */,
+			);
+			path = Module;
+			sourceTree = "<group>";
+		};
+		FA140EBC1F080B43007A3ADD /* Assembly */ = {
+			isa = PBXGroup;
+			children = (
+				FA140ED41F080C53007A3ADD /* MotivationsAssembly.swift */,
+			);
+			path = Assembly;
+			sourceTree = "<group>";
+		};
+		FA140EBD1F080B43007A3ADD /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				FA140ED21F080C2E007A3ADD /* MotivationsInteractor.swift */,
+				FA140EDA1F080C79007A3ADD /* MotivationsInteractorInput.swift */,
+				FA140EDC1F080C7F007A3ADD /* MotivationsInteractorOutput.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		FA140EBE1F080B43007A3ADD /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				FA140ED01F080C1E007A3ADD /* MotivationsPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		FA140EBF1F080B43007A3ADD /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				FA140ECC1F080BF4007A3ADD /* MotivationsRouter.swift */,
+				FA140ECE1F080BFD007A3ADD /* MotivationsRouterInput.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		FA140EC01F080B43007A3ADD /* View */ = {
+			isa = PBXGroup;
+			children = (
+				FA140EF01F081505007A3ADD /* CollectionViewCells */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		FA140EC11F080B43007A3ADD /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				FA140EC81F080BA7007A3ADD /* Motivations.storyboard */,
+			);
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		FA140EC21F080B43007A3ADD /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				FA140EC41F080B5E007A3ADD /* Root.storyboard */,
+				FA140EC61F080B66007A3ADD /* Launch.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		FA140EDE1F08126B007A3ADD /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				FA140EDF1F08126B007A3ADD /* Assets.xcassets */,
+				FA140EE01F08126B007A3ADD /* Localization */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		FA140EE01F08126B007A3ADD /* Localization */ = {
+			isa = PBXGroup;
+			children = (
+				FA140EE81F081276007A3ADD /* InfoPlist.strings */,
+				FA140EEB1F08127C007A3ADD /* Localizable.strings */,
+			);
+			path = Localization;
+			sourceTree = "<group>";
+		};
+		FA140EF01F081505007A3ADD /* CollectionViewCells */ = {
+			isa = PBXGroup;
+			children = (
+				FA140ECA1F080BB6007A3ADD /* MotivationsViewController.swift */,
+				FA140ED61F080C65007A3ADD /* MotivationsViewInput.swift */,
+				FA140ED81F080C6B007A3ADD /* MotivationsViewOutput.swift */,
+				FA140EF11F081505007A3ADD /* MotivationCollectionViewCell */,
+			);
+			path = CollectionViewCells;
+			sourceTree = "<group>";
+		};
+		FA140EF11F081505007A3ADD /* MotivationCollectionViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				FA140EF21F081505007A3ADD /* MotivationCollectionViewCell.swift */,
+				FA140EF31F081505007A3ADD /* MotivationCollectionViewCell.xib */,
+			);
+			path = MotivationCollectionViewCell;
+			sourceTree = "<group>";
+		};
+		FA140EF61F081817007A3ADD /* Assemblies */ = {
+			isa = PBXGroup;
+			children = (
+				FA140EF71F081817007A3ADD /* ApplicationAssembly */,
+			);
+			path = Assemblies;
+			sourceTree = "<group>";
+		};
+		FA140EF71F081817007A3ADD /* ApplicationAssembly */ = {
+			isa = PBXGroup;
+			children = (
+				FA140EF81F081817007A3ADD /* ApplicationAssembly.swift */,
+			);
+			path = ApplicationAssembly;
+			sourceTree = "<group>";
+		};
+		FA140EFC1F082007007A3ADD /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				FA140EFD1F082007007A3ADD /* Motivation.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		FA140EFF1F08DFCF007A3ADD /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				FA140F051F08E0D7007A3ADD /* NSObject+ClassName */,
+				FA140F001F08DFCF007A3ADD /* String+Localization */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		FA140F001F08DFCF007A3ADD /* String+Localization */ = {
+			isa = PBXGroup;
+			children = (
+				FA140F011F08DFE2007A3ADD /* String+Localization.swift */,
+			);
+			path = "String+Localization";
+			sourceTree = "<group>";
+		};
+		FA140F051F08E0D7007A3ADD /* NSObject+ClassName */ = {
+			isa = PBXGroup;
+			children = (
+				FA140F061F08E0D7007A3ADD /* NSObject+ClassName.swift */,
+			);
+			path = "NSObject+ClassName";
+			sourceTree = "<group>";
+		};
+		FA140F081F08E2A5007A3ADD /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				FA140F091F08E2A5007A3ADD /* LocalizationConstants */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
+		FA140F091F08E2A5007A3ADD /* LocalizationConstants */ = {
+			isa = PBXGroup;
+			children = (
+				FA140F0A1F08E2B9007A3ADD /* LocalizationConstants.swift */,
+			);
+			path = LocalizationConstants;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +386,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FA140EAC1F07F4A7007A3ADD /* Build configuration list for PBXNativeTarget "Motivation" */;
 			buildPhases = (
+				31A3010311AAD26A921DB382 /* [CP] Check Pods Manifest.lock */,
 				FA140E961F07F4A7007A3ADD /* Sources */,
 				FA140E971F07F4A7007A3ADD /* Frameworks */,
 				FA140E981F07F4A7007A3ADD /* Resources */,
+				0F2BEA4A604EDF7D501F7164 /* [CP] Embed Pods Frameworks */,
+				727A0815B097D944486C3DAA /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -92,11 +410,11 @@
 			attributes = {
 				LastSwiftUpdateCheck = 0830;
 				LastUpgradeCheck = 0830;
-				ORGANIZATIONNAME = "Alex Zarochintsev";
+				ORGANIZATIONNAME = "[Zarochintsev Production];";
 				TargetAttributes = {
 					FA140E991F07F4A7007A3ADD = {
 						CreatedOnToolsVersion = 8.3.3;
-						DevelopmentTeam = S933TMD5M3;
+						DevelopmentTeam = V7Y4KEU8VJ;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -108,6 +426,7 @@
 			knownRegions = (
 				en,
 				Base,
+				ru,
 			);
 			mainGroup = FA140E911F07F4A7007A3ADD;
 			productRefGroup = FA140E9B1F07F4A7007A3ADD /* Products */;
@@ -124,41 +443,110 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FA140EA81F07F4A7007A3ADD /* LaunchScreen.storyboard in Resources */,
-				FA140EA51F07F4A7007A3ADD /* Assets.xcassets in Resources */,
-				FA140EA31F07F4A7007A3ADD /* Main.storyboard in Resources */,
+				FA140EC51F080B5E007A3ADD /* Root.storyboard in Resources */,
+				FA140EE91F08127C007A3ADD /* Localizable.strings in Resources */,
+				FA140EF51F081505007A3ADD /* MotivationCollectionViewCell.xib in Resources */,
+				FA140EC91F080BA7007A3ADD /* Motivations.storyboard in Resources */,
+				FA140EE31F08126B007A3ADD /* Assets.xcassets in Resources */,
+				FA140EC71F080B66007A3ADD /* Launch.storyboard in Resources */,
+				FA140EE61F081276007A3ADD /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0F2BEA4A604EDF7D501F7164 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Motivation/Pods-Motivation-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		31A3010311AAD26A921DB382 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		727A0815B097D944486C3DAA /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Motivation/Pods-Motivation-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		FA140E961F07F4A7007A3ADD /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FA140EA01F07F4A7007A3ADD /* ViewController.swift in Sources */,
-				FA140E9E1F07F4A7007A3ADD /* AppDelegate.swift in Sources */,
+				FA140ED11F080C1E007A3ADD /* MotivationsPresenter.swift in Sources */,
+				FA140EF91F081817007A3ADD /* ApplicationAssembly.swift in Sources */,
+				FA140ECD1F080BF4007A3ADD /* MotivationsRouter.swift in Sources */,
+				FA140EF41F081505007A3ADD /* MotivationCollectionViewCell.swift in Sources */,
+				FA140ECF1F080BFD007A3ADD /* MotivationsRouterInput.swift in Sources */,
+				FA140ED51F080C53007A3ADD /* MotivationsAssembly.swift in Sources */,
+				FA140ECB1F080BB6007A3ADD /* MotivationsViewController.swift in Sources */,
+				FA140F0B1F08E2B9007A3ADD /* LocalizationConstants.swift in Sources */,
+				FA140EFE1F082007007A3ADD /* Motivation.swift in Sources */,
+				FA140ED71F080C65007A3ADD /* MotivationsViewInput.swift in Sources */,
+				FA140F021F08DFE2007A3ADD /* String+Localization.swift in Sources */,
+				FA140EDB1F080C79007A3ADD /* MotivationsInteractorInput.swift in Sources */,
+				FA140EDD1F080C7F007A3ADD /* MotivationsInteractorOutput.swift in Sources */,
+				FA140ED91F080C6B007A3ADD /* MotivationsViewOutput.swift in Sources */,
+				FA140F071F08E0D7007A3ADD /* NSObject+ClassName.swift in Sources */,
+				FA140ED31F080C2E007A3ADD /* MotivationsInteractor.swift in Sources */,
+				FA140EC31F080B43007A3ADD /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		FA140EA11F07F4A7007A3ADD /* Main.storyboard */ = {
+		FA140EE81F081276007A3ADD /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
-				FA140EA21F07F4A7007A3ADD /* Base */,
+				FA140EE71F081276007A3ADD /* en */,
+				FA140F101F094C34007A3ADD /* ru */,
 			);
-			name = Main.storyboard;
+			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
-		FA140EA61F07F4A7007A3ADD /* LaunchScreen.storyboard */ = {
+		FA140EEB1F08127C007A3ADD /* Localizable.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
-				FA140EA71F07F4A7007A3ADD /* Base */,
+				FA140EEA1F08127C007A3ADD /* en */,
+				FA140F111F094C34007A3ADD /* ru */,
 			);
-			name = LaunchScreen.storyboard;
+			name = Localizable.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -168,6 +556,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
@@ -219,6 +608,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
@@ -261,12 +651,14 @@
 		};
 		FA140EAD1F07F4A7007A3ADD /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B88FF43ACFBA4CC95FFAC73D /* Pods-Motivation.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = S933TMD5M3;
+				DEVELOPMENT_TEAM = V7Y4KEU8VJ;
 				INFOPLIST_FILE = Motivation/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.zarochintsev.Motivation;
+				PRODUCT_BUNDLE_IDENTIFIER = com.zarochintsev.motivationbox;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -274,12 +666,14 @@
 		};
 		FA140EAE1F07F4A7007A3ADD /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 30508BF475DF366609AD9D99 /* Pods-Motivation.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = S933TMD5M3;
+				DEVELOPMENT_TEAM = V7Y4KEU8VJ;
 				INFOPLIST_FILE = Motivation/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.zarochintsev.Motivation;
+				PRODUCT_BUNDLE_IDENTIFIER = com.zarochintsev.motivationbox;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -304,6 +698,7 @@
 				FA140EAE1F07F4A7007A3ADD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
