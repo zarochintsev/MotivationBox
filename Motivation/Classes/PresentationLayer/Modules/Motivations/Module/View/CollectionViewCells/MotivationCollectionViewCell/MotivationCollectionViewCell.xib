@@ -4,7 +4,6 @@
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -30,16 +29,13 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GD6-tM-e9Y">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GD6-tM-e9Y">
                                 <rect key="frame" x="16" y="67" width="284" height="546"/>
-                                <string key="text">Важно не бояться рисковать. Помните, что наибольшая неудача — не попытаться. Когда вы найдете что-то, что Вам нравится делать, будьте лучшим в этом.
-—  Дебби Филдс</string>
                                 <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="16"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" red="1" green="0.79607843140000001" blue="0.14117647059999999" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="53X-PI-SQS" firstAttribute="top" secondItem="E65-Lw-Z8U" secondAttribute="top" constant="16" id="0CW-nT-ZeK"/>
                             <constraint firstItem="GD6-tM-e9Y" firstAttribute="top" secondItem="53X-PI-SQS" secondAttribute="bottom" constant="16" id="9iX-nP-xTA"/>
