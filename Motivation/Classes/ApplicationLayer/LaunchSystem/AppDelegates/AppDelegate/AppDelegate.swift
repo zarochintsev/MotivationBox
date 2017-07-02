@@ -14,10 +14,17 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var window: UIWindow?
     
     
+    var notificationService: NotificationService!
+    
+    
     // MARK: - UIApplicationDelegate
     
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        
+        notificationService = ApplicationAssembly.assembler.resolver.resolve(NotificationService.self)
+        notificationService.configure(application)
+        
         return true
     }
     
