@@ -34,6 +34,7 @@
 		FA140F0B1F08E2B9007A3ADD /* LocalizationConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA140F0A1F08E2B9007A3ADD /* LocalizationConstants.swift */; };
 		FA2F474F1F09605C007C3424 /* NotificationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA2F474E1F09605C007C3424 /* NotificationService.swift */; };
 		FA2F47511F09609A007C3424 /* NotificationServiceImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA2F47501F09609A007C3424 /* NotificationServiceImpl.swift */; };
+		FA42EAE41F09EF440053BA08 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = FA42EAE31F09EF440053BA08 /* Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -41,7 +42,6 @@
 		73FD7EDBD84CC31DE629B855 /* Pods_Motivation.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Motivation.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B88FF43ACFBA4CC95FFAC73D /* Pods-Motivation.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Motivation.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Motivation/Pods-Motivation.debug.xcconfig"; sourceTree = "<group>"; };
 		FA140E9A1F07F4A7007A3ADD /* Motivation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Motivation.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		FA140EA91F07F4A7007A3ADD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FA140EB61F080B43007A3ADD /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FA140EC41F080B5E007A3ADD /* Root.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Root.storyboard; sourceTree = "<group>"; };
 		FA140EC61F080B66007A3ADD /* Launch.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Launch.storyboard; sourceTree = "<group>"; };
@@ -70,7 +70,8 @@
 		FA140F111F094C34007A3ADD /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Localizable.strings; sourceTree = "<group>"; };
 		FA2F474E1F09605C007C3424 /* NotificationService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationService.swift; sourceTree = "<group>"; };
 		FA2F47501F09609A007C3424 /* NotificationServiceImpl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationServiceImpl.swift; sourceTree = "<group>"; };
-		FA42EAE11F097E690053BA08 /* Motivation.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Motivation.entitlements; sourceTree = "<group>"; };
+		FA42EAE11F097E690053BA08 /* Motivation.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; name = Motivation.entitlements; path = ../Motivation.entitlements; sourceTree = "<group>"; };
+		FA42EAE31F09EF440053BA08 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -125,8 +126,7 @@
 			children = (
 				FA140EB11F080B43007A3ADD /* Classes */,
 				FA140EDE1F08126B007A3ADD /* Resources */,
-				FA140EA91F07F4A7007A3ADD /* Info.plist */,
-				FA42EAE11F097E690053BA08 /* Motivation.entitlements */,
+				FA42EAE21F09EF440053BA08 /* Supporting Files */,
 			);
 			path = Motivation;
 			sourceTree = "<group>";
@@ -403,6 +403,15 @@
 			path = NotificationService;
 			sourceTree = "<group>";
 		};
+		FA42EAE21F09EF440053BA08 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				FA42EAE31F09EF440053BA08 /* Info.plist */,
+				FA42EAE11F097E690053BA08 /* Motivation.entitlements */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -472,6 +481,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FA42EAE41F09EF440053BA08 /* Info.plist in Resources */,
 				FA140EC51F080B5E007A3ADD /* Root.storyboard in Resources */,
 				FA140EE91F08127C007A3ADD /* Localizable.strings in Resources */,
 				FA140EF51F081505007A3ADD /* MotivationCollectionViewCell.xib in Resources */,
@@ -686,7 +696,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = V7Y4KEU8VJ;
-				INFOPLIST_FILE = Motivation/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Motivation/Supporting Files/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.zarochintsev.motivationbox;
@@ -701,7 +711,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = V7Y4KEU8VJ;
-				INFOPLIST_FILE = Motivation/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Motivation/Supporting Files/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.zarochintsev.motivationbox;
