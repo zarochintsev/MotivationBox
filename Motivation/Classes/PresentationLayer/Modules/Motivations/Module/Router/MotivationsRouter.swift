@@ -8,12 +8,12 @@
 
 import UIKit
 import LightRoute
-import GoogleMobileAds
 
 class MotivationsRouter: MotivationsRouterInput {
     
     /// This property contain protocol protected view controller for transition.
     weak var transitionHandler: TransitionHandler!
+    
     
     // MARK: - MotivationsRouterInput
 }
