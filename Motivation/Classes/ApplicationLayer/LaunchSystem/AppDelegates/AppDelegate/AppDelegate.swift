@@ -13,7 +13,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     var window: UIWindow?
     
-    
     var notificationService: NotificationService!
     
     
@@ -39,15 +38,17 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         func fireDate() -> Date {
             let dateFormatter = DateFormatter()
-            dateFormatter.timeZone = NSTimeZone.local
+            dateFormatter.timeZone = TimeZone.current
             dateFormatter.dateFormat = "yyyy-MM-dd"
             
-            let stringDate = dateFormatter.string(from: Date()).appending(" 10:00:00 Z")
+            let stringDate = dateFormatter.string(from: Date()).appending(" 10:00:00")
             
-            dateFormatter.dateFormat = "yyyy-MM-dd HH:mm:ss Z"
+            dateFormatter.dateFormat = "yyyy-MM-dd HH:mm:ss"
             let today = dateFormatter.date(from: stringDate)!
             
-            return Calendar.current.date(byAdding: .day, value: 1, to: today)!
+            let tomorrow = Calendar.current.date(byAdding: .day, value: 1, to: today)!
+            
+            return tomorrow
         }
         
         let local = LocalPushNotification(
