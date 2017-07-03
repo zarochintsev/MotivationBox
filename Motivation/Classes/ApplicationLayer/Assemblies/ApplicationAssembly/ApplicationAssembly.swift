@@ -21,14 +21,14 @@ final class ApplicationAssembly {
         ])
     }
     
-    //If you want use custom Assembler
+    // If you want use custom Assembler
     init(with assemblies: [Assembly]) {
         assembler = Assembler(assemblies)
     }
     
 }
 
-//Inject dependency in Main Storyboard
+// Inject dependency in Main Storyboard
 extension SwinjectStoryboard {
     
     public static func setup() {
