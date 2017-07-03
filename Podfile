@@ -13,6 +13,6 @@ target 'Motivation' do
     
     pod 'Swinject', '~> 2.1'
     pod 'SwinjectStoryboard', '~> 1.1'
-    
     pod 'LightRoute', '~> 1.0'
+    pod 'Firebase', '~> 4.0'
 end
