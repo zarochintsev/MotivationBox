@@ -7,9 +7,9 @@
 	<key>AD_UNIT_ID_FOR_INTERSTITIAL_TEST</key>
 	<string>ca-app-pub-3940256099942544/4411468910</string>
 	<key>CLIENT_ID</key>
-	<string>70635251169-ln2v4v6f7imuvl9u4ifair6s23appd2f.apps.googleusercontent.com</string>
+	<string>70635251169-peaiaga41gjvi9191s16f3mbs3ptm5gg.apps.googleusercontent.com</string>
 	<key>REVERSED_CLIENT_ID</key>
-	<string>com.googleusercontent.apps.70635251169-ln2v4v6f7imuvl9u4ifair6s23appd2f</string>
+	<string>com.googleusercontent.apps.70635251169-peaiaga41gjvi9191s16f3mbs3ptm5gg</string>
 	<key>API_KEY</key>
 	<string>AIzaSyDgvM9fqTI1zuxv5gSyp5p2BUs6u9uKIbE</string>
 	<key>GCM_SENDER_ID</key>
@@ -17,7 +17,7 @@
 	<key>PLIST_VERSION</key>
 	<string>1</string>
 	<key>BUNDLE_ID</key>
-	<string>com.zarochintsev.motivationbox</string>
+	<string>com.zarochintsev.motivation-box</string>
 	<key>PROJECT_ID</key>
 	<string>motivation-box</string>
 	<key>STORAGE_BUCKET</key>
@@ -33,7 +33,7 @@
 	<key>IS_SIGNIN_ENABLED</key>
 	<true/>
 	<key>GOOGLE_APP_ID</key>
-	<string>1:70635251169:ios:33143a901f720d7c</string>
+	<string>1:70635251169:ios:45ce3bab7ee20fba</string>
 	<key>DATABASE_URL</key>
 	<string>https://motivation-box.firebaseio.com</string>
 </dict>
