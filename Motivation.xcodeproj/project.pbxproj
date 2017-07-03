@@ -47,14 +47,14 @@
 		FA140EC41F080B5E007A3ADD /* Root.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Root.storyboard; sourceTree = "<group>"; };
 		FA140EC61F080B66007A3ADD /* Launch.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Launch.storyboard; sourceTree = "<group>"; };
 		FA140EC81F080BA7007A3ADD /* Motivations.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Motivations.storyboard; sourceTree = "<group>"; };
-		FA140ECA1F080BB6007A3ADD /* MotivationsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MotivationsViewController.swift; path = ../MotivationsViewController.swift; sourceTree = "<group>"; };
+		FA140ECA1F080BB6007A3ADD /* MotivationsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MotivationsViewController.swift; sourceTree = "<group>"; };
 		FA140ECC1F080BF4007A3ADD /* MotivationsRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MotivationsRouter.swift; sourceTree = "<group>"; };
 		FA140ECE1F080BFD007A3ADD /* MotivationsRouterInput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MotivationsRouterInput.swift; sourceTree = "<group>"; };
 		FA140ED01F080C1E007A3ADD /* MotivationsPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MotivationsPresenter.swift; sourceTree = "<group>"; };
 		FA140ED21F080C2E007A3ADD /* MotivationsInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MotivationsInteractor.swift; sourceTree = "<group>"; };
 		FA140ED41F080C53007A3ADD /* MotivationsAssembly.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MotivationsAssembly.swift; sourceTree = "<group>"; };
-		FA140ED61F080C65007A3ADD /* MotivationsViewInput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MotivationsViewInput.swift; path = ../MotivationsViewInput.swift; sourceTree = "<group>"; };
-		FA140ED81F080C6B007A3ADD /* MotivationsViewOutput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MotivationsViewOutput.swift; path = ../MotivationsViewOutput.swift; sourceTree = "<group>"; };
+		FA140ED61F080C65007A3ADD /* MotivationsViewInput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MotivationsViewInput.swift; sourceTree = "<group>"; };
+		FA140ED81F080C6B007A3ADD /* MotivationsViewOutput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MotivationsViewOutput.swift; sourceTree = "<group>"; };
 		FA140EDA1F080C79007A3ADD /* MotivationsInteractorInput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MotivationsInteractorInput.swift; sourceTree = "<group>"; };
 		FA140EDC1F080C7F007A3ADD /* MotivationsInteractorOutput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MotivationsInteractorOutput.swift; sourceTree = "<group>"; };
 		FA140EDF1F08126B007A3ADD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -263,6 +263,9 @@
 		FA140EC01F080B43007A3ADD /* View */ = {
 			isa = PBXGroup;
 			children = (
+				FA140ECA1F080BB6007A3ADD /* MotivationsViewController.swift */,
+				FA140ED61F080C65007A3ADD /* MotivationsViewInput.swift */,
+				FA140ED81F080C6B007A3ADD /* MotivationsViewOutput.swift */,
 				FA140EF01F081505007A3ADD /* CollectionViewCells */,
 			);
 			path = View;
@@ -306,9 +309,6 @@
 		FA140EF01F081505007A3ADD /* CollectionViewCells */ = {
 			isa = PBXGroup;
 			children = (
-				FA140ECA1F080BB6007A3ADD /* MotivationsViewController.swift */,
-				FA140ED61F080C65007A3ADD /* MotivationsViewInput.swift */,
-				FA140ED81F080C6B007A3ADD /* MotivationsViewOutput.swift */,
 				FA140EF11F081505007A3ADD /* MotivationCollectionViewCell */,
 			);
 			path = CollectionViewCells;
