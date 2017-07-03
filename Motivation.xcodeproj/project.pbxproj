@@ -451,7 +451,7 @@
 						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
 							com.apple.Push = {
-								enabled = 0;
+								enabled = 1;
 							};
 						};
 					};
@@ -695,6 +695,7 @@
 			baseConfigurationReference = B88FF43ACFBA4CC95FFAC73D /* Pods-Motivation.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Motivation/Motivation.entitlements;
 				DEVELOPMENT_TEAM = V7Y4KEU8VJ;
 				INFOPLIST_FILE = "$(SRCROOT)/Motivation/Supporting Files/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
@@ -710,6 +711,7 @@
 			baseConfigurationReference = 30508BF475DF366609AD9D99 /* Pods-Motivation.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Motivation/Motivation.entitlements;
 				DEVELOPMENT_TEAM = V7Y4KEU8VJ;
 				INFOPLIST_FILE = "$(SRCROOT)/Motivation/Supporting Files/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
