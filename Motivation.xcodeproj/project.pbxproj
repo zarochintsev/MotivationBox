@@ -34,7 +34,6 @@
 		FA140F0B1F08E2B9007A3ADD /* LocalizationConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA140F0A1F08E2B9007A3ADD /* LocalizationConstants.swift */; };
 		FA2F474F1F09605C007C3424 /* NotificationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA2F474E1F09605C007C3424 /* NotificationService.swift */; };
 		FA2F47511F09609A007C3424 /* NotificationServiceImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA2F47501F09609A007C3424 /* NotificationServiceImpl.swift */; };
-		FA42EAE41F09EF440053BA08 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = FA42EAE31F09EF440053BA08 /* Info.plist */; };
 		FA42EAE61F0A58B40053BA08 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = FA42EAE51F0A58B40053BA08 /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
@@ -484,7 +483,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FA42EAE41F09EF440053BA08 /* Info.plist in Resources */,
 				FA140EC51F080B5E007A3ADD /* Root.storyboard in Resources */,
 				FA42EAE61F0A58B40053BA08 /* GoogleService-Info.plist in Resources */,
 				FA140EE91F08127C007A3ADD /* Localizable.strings in Resources */,
