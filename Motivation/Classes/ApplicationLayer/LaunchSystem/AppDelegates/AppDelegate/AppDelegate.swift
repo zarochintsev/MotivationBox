@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Firebase
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -23,6 +24,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         notificationService = ApplicationAssembly.assembler.resolver.resolve(NotificationService.self)
         notificationService.configure(application)
+        
+        FirebaseApp.configure()
         
         return true
     }
