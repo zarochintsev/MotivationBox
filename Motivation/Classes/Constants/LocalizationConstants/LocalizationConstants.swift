@@ -15,7 +15,7 @@ struct LS {
     }
     
     struct Motivations {
-        static let new = "Motivations.NewMotivation"
+        static let new = "Motivations.New"
     }
     
     struct LocalNotification {

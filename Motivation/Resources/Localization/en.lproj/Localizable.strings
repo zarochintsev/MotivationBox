@@ -7,7 +7,8 @@
 
 
 "Common.Day" = "Day";
-"Motivations.NewMotivation" = "New motivation will be available tomorrow!";
+
+"Motivations.New" = "New motivation will be available tomorrow!";
 
 "LocalNotification.Title" = "New motivation is ready";
 "LocalNotification.Text" = "Check it out";
@@ -92,262 +93,90 @@
 "236" = "Certain things catch your eye, but pursue only those that capture the heart.";
 "237" = "Everything you’ve ever wanted is on the other side of fear.";
 "238" = "When I was 5 years old, my mother always told me that happiness was the key to life.  When I went to school, they asked me what I wanted to be when I grew up.  I wrote down ‘happy’.  They told me I didn’t understand the assignment, and I told them they didn’t understand life.\n—John Lennon";
-
-
 "239" = "Everything has beauty, but not everyone can see.\n—Confucius";
-
-
 "240" = "Happiness is not something readymade.  It comes from your own actions.\n—Dalai Lama";
-
-
 "241" = "Challenges are what make life interesting and overcoming them is what makes life meaningful.";
-
-
 "242" = "Limitations live only in our minds.  But if we use our imaginations, our possibilities become limitless.";
-
-
 "243" = "I didn’t fail the test. I just found 100 ways to do it wrong.\n—Benjamin Franklin";
-
-
 "244" = "In order to succeed, your desire for success should be greater than your fear of failure.";
-
-
 "245" = "A person who never made a mistake never tried anything new.\n—Albert Einstein";
-
-
 "246" = "It does not matter how slowly you go as long as you do not stop.\n—Confucius";
-
-
 "247" = "Our lives begin to end the day we become silent about things that matter.\n—Martin Luther King Jr.";
-
-
 "248" = "Do what you can, where you are, with what you have.\n—Teddy Roosevelt";
-
-
 "249" = "When everything seems to be going against you, remember that the airplane takes off against the wind, not with it.– Henry Ford";
-
-
 "250" = "The only way to do great work is to love what you do.– Steve Jobs";
-
-
 "251" = "Strength does not come from winning. Your struggles develop your strengths. When you go through hardships and decide not to surrender, that is strength.\n\n— Arnold Schwarzenegger";
-
-
 "252" = "The secret of your success is determined by your daily agenda.";
-
-
 "253" = "The true secret of happiness lies in taking a genuine interest in all the details of daily life.";
-
-
 "254" = "Wisdom is the reward you get for a lifetime of listening when you'd have preferred to talk.\n\n— Doug Larson";
-
-
 "255" = "A lack of transparency results in distrust and a deep sense of insecurity.\n\n— Dalai Lama";
-
-
 "256" = "Honesty is the first chapter in the book of wisdom.\n\n— Thomas Jefferson";
-
-
 "257" = "If everyone is moving forward together, then success takes care of itself.\n\n— Henry Ford";
-
-
 "258" = "Life is 10% what happens to me and 90% how I react.\n\n— John Maxwell";
-
-
 "259" = "A wise man adapts himself to circumstances, as water shapes itself to the vessel that contains it.\n\n— Chinese Proverb";
-
-
 "260" = "Develop a passion for learning. If you do, you will never cease to grow.\n\n— Anthony J. D'Angelo";
-
-
 "261" = "Nothing is as important as passion. No matter what you want to do with your life, be passionate.\n\n— Bon Jovi";
-
-
 "262" = "You can't fake passion.\n\n— Barbara Corcoran";
-
-
 "263" = "Truth is so rare that it is delightful to tell it.\n\n— Emily Dickinson";
-
-
 "264" = "Surprise yourself every day with your own courage.\n\n— Denholm Elliott";
-
-
 "265" = "Simplicity is the ultimate sophistication.\n\n—  Leonardo da Vinci";
-
-
 "266" = "There is no greatness where there is no simplicity, goodness and truth.\n\n— Leo Tolstoy";
-
-
 "267" = "Simplicity is prerequisite for reliability.\n\n— Edsger Dijkstra";
-
-
 "268" = "Life is really simple, but we insist on making it complicated.\n\n— Aristotle";
-
-
 "269" = "Nature is pleased with simplicity. And nature is no dummy.\n\n— Isaac Newton";
-
-
 "270" = "The truest indication of gratitude is to return what you are grateful for.\n\n— Richard Paul Evans";
-
-
 "271" = "We must find time to stop and thank the people who make a difference in our lives.\n\n— John F. Kennedy";
-
-
 "272" = "True forgiveness is when you can say, 'Thank you for that experience'.\n\n— Oprah Winfrey";
-
-
 "273" = "Do not spoil what you have by desiring what you have not; remember that what you now have was once among the things you only hoped for.\n\n— Epicurus";
-
-
 "274" = "Cultivate the habit of being grateful for every good thing that comes to you, and to give thanks continuously.\n\n— Ralph Waldo Emerson";
-
-
 "275" = "Gratitude is not only the greatest of virtues, but the parent of all others.\n\n— Cicero";
-
-
 "276" = "A warm smile is the universal language of kindness.\n\n— William Arthur Ward";
-
-
 "277" = "Wherever there is a human being, there is an opportunity for a kindness.\n\n— Seneca";
-
 "278" = "Kindness is a language which the deaf can hear and the blind can see.\n\n— Mark Twain";
-
-
 "279" = "Never lose a chance of saying a kind word.\n\n— William Makepeace Thackeray";
-
-
 "280" = "No one has ever become poor by giving.\n\n— Anne Frank";
-
-
 "281" = "Energy and persistence conquer all things.\n\n— Benjamin Franklin";
-
-
 "282" = "Success is stumbling from failure to failure with no loss of enthusiasm.\n\n— Winston Churchill";
-
-
 "283" = "It is during our darkest moments that we must focus to see the light.\n\n— Aristotle";
-
-
 "284" = "Do you want to know who you are? Don't ask. Act! Action will delineate and define you.\n\n— Thomas Jefferson";
-
-
 "285" = "Logic will get you from A to B. Imagination will take you everywhere.\n\n— Albert Einstein";
-
-
 "286" = "Success is not the key to happiness. Happiness is the key to success. If you love what you are doing, you'll be a success.\n\n— Albert Schweitzer";
-
-
 "287" = "Change is the law of life. And those who look only to the past or present are certain to miss the future.\n\n— John F. Kennedy";
-
-
 "288" = "Life is a succession of lessons which must be lived to be understood.\n\n— Helen Keller";
-
-
 "289" = "The only disability in life is a bad attitude.\n\n— Scott Hamilton";
-
-
 "290" = "Don't let life discourage you; everyone who got where he is had to begin where he was.\n\n— Richard L. Evans";
-
-
 "291" = "Love is not maximum emotion. Love is maximum commitment.\n\n— Sinclair B. Ferguson";
-
 "292" = "Keep love in your heart. A life without it is like a sunless garden when the flowers are dead.\n\n— Oscar Wilde";
-
-
 "293" = "Sometimes the heart sees what is invisible to the eye.\n\n— H. Jackson Brown";
-
-
 "294" = "Where there is love there is life.\n\n— Mahatma Gandhi";
-
-
 "295" = "Let us always meet each other with smile, for the smile is the beginning of love.\n\n— Mother Teresa";
-
-
 "296" = "A flower cannot blossom without sunshine, and man cannot live without love.\n\n— Max Muller";
-
-
 "297" = "Faith makes all things possible... love makes all things easy.\n\n— Dwight L. Moody";
-
-
 "298" = "Be the change that you wish to see in the world.\n\n— Mahatma Gandhi";
-
-
 "299" = "Everyone thinks of changing the world, but no one thinks of changing himself.\n\n— Leo Tolstoy";
-
-
 "300" = "Education is the most powerful weapon which you can use to change the world.\n\n— Nelson Mandela";
-
-
 "301" = "Change will not come if we wait for some other person, or if we wait for some other time. We are the ones we've been waiting for. We are the change that we seek.\n\n— Barack Obama";
-
-
 "302" = "No matter who you are, no matter what you did, no matter where you've come from, you can always change, become a better version of yourself.\n\n— Madonna";
-
 "303" = "Those who cannot change their minds cannot change anything.\n\n— George Bernard Shaw";
-
-
 "304" = "Change is the end result of all true learning.\n\n— Leo Buscaglia";
-
-
 "305" = "Change your thoughts and you change your world.\n\n— Norman Vincent Peale";
-
-
 "306" = "A tiny change today brings a dramatically different tomorrow.\n\n—  Richard Bach";
-
-
 "307" = "Forgiveness does not change the past, but it does enlarge the future.\n\n— Paul Boese";
-
-
 "308" = "The weak can never forgive. Forgiveness is the attribute of the strong.\n\n— Mahatma Gandhi";
-
-
 "309" = "Always forgive your enemies — nothing annoys them so much.\n\n— Oscar Wilde";
-
-
 "310" = "Sooner or later we've all got to let go of our past.\n\n—  Dan Brown";
-
-
 "311" = "The great courageous act that we must all do, is to have the courage to step out of our history and past so that we can live our dreams.\n\n— Oprah Winfrey";
-
-
 "312" = "The love of family and the admiration of friends is much more important than wealth and privilege.\n\n— Charles Kuralt";
-
-
 "313" = "Family is not an important thing. It's everything.\n\n—  Michael J. Fox";
-
-
 "314" = "Family is the most important thing in the world.\n\n— Princess Diana";
-
-
 "315" = "To us, family means putting your arms around each other and being there.\n\n— Barbara Bush";
-
-
 "316" = "The family is one of nature's masterpieces.\n\n— George Santayana";
-
-
 "317" = "That which does not kill us makes us stronger.\n\n—  Friedrich Nietzsche";
-
-
 "318" = "We are only as strong as we are united, as weak as we are divided.\n\n— J.K. Rowling";
-
-
 "319" = "A brave man acknowledges the strength of others.\n\n— Veronica Roth";
-
-
 "320" = "Strength does not come from physical capacity. It comes from an indomitable will.\n\n— Mahatma Gandhi";
-
-
 "321" = "With the new day comes new strength and new thoughts.\n\n— Eleanor Roosevelt";
-
-
 "322" = "Be strong. Live honorably and with dignity. When you don't think you can, hold on.\n\n— James Frey";
-
-
 "323" = "You feel your strength in the experience of pain.\n\n— Jim Morrison";
-
-
 "324" = "Shallow men believe in luck. Strong men believe in cause and effect.\n\n— Ralph Waldo Emerson";
-
-
 "325" = "Leadership is service, not position.\n\n— Tim Fargo";
-

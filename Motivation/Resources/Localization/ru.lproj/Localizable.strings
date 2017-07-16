@@ -7,7 +7,8 @@
 
 
 "Common.Day" = "День";
-"Motivations.NewMotivation" = "Новая мотивация будет доступна завтра!";
+
+"Motivations.New" = "Новая мотивация будет доступна завтра!";
 
 "LocalNotification.Title" = "Новая мотивация уже доступна";
 "LocalNotification.Text" = "Не пропусти новую мотивацию";
