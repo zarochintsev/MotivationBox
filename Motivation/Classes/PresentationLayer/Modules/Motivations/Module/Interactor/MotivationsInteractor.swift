@@ -10,6 +10,12 @@ import UIKit
 
 class MotivationsInteractor: MotivationsInteractorInput {
     
+    // MARK: - Constants
+    
+    private struct C {
+        static let startIndex = 139
+    }
+    
     /// Reference to the Presenter's output interface.
     weak var output: MotivationsInteractorOutput!
     
@@ -21,7 +27,7 @@ class MotivationsInteractor: MotivationsInteractorInput {
         
         var elements: [Motivation] = []
         
-        for index in 167...day {
+        for index in C.startIndex...day {
             let motivation = Motivation(title: "\(LS.Common.day.localized()) \(index)", message: "\(index)")
             
             elements.append(motivation)
