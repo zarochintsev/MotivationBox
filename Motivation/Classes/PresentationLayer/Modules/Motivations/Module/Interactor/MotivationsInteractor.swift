@@ -13,7 +13,7 @@ class MotivationsInteractor: MotivationsInteractorInput {
     // MARK: - Constants
     
     private struct C {
-        static let startIndex = 139
+        static let startIndex = 89
     }
     
     /// Reference to the Presenter's output interface.
