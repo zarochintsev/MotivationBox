@@ -183,17 +183,23 @@ extension MotivationsViewController: UICollectionViewDataSource {
     
 }
 
-
 // MARK: - UICollectionViewDataSource
 
 extension MotivationsViewController: UICollectionViewDelegate {
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        collectionView.deselectItem(at: indexPath, animated: true)
+        collectionView.scrollToItem(at: indexPath, at: .centeredHorizontally, animated: false)
+        
+        // If selected last cell, return
+        if (indexPath.row == self.motivations.count - 1) {
+            return
+        }
+        
+        let motivation = motivations[indexPath.row]
+        output.didTapOnMotivation(title: motivation.title, motivation: motivation.message)
     }
     
 }
-
 
 // MARK: - UICollectionViewDelegateFlowLayout
 
