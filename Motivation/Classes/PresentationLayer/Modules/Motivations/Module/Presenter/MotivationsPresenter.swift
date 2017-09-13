@@ -44,7 +44,7 @@ extension MotivationsPresenter: MotivationsViewOutput {
 extension MotivationsPresenter: MotivationsInteractorOutput {
     
     func updatedMotivations(_ elements: [Motivation]) {
-        view.updateMotivations(elements)
+        view.configureWith(elements)
     }
     
 }

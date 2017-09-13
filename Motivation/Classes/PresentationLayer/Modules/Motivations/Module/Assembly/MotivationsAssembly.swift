@@ -14,31 +14,39 @@ class MotivationsAssembly: Assembly {
     
     func assemble(container: Container) {
         
-        container.register(MotivationsInteractor.self) { (resolver: Resolver, presenter: MotivationsPresenter) in
+        container.register(MotivationsInteractor.self) { (r: Resolver, presenter: MotivationsPresenter) in
             let interactor = MotivationsInteractor()
             interactor.output = presenter
             
             return interactor
         }
         
-        container.register(MotivationsRouter.self) { (resolver: Resolver, viewController: MotivationsViewController) in
+        container.register(MotivationsRouter.self) { (r: Resolver, viewController: MotivationsViewController) in
             let router = MotivationsRouter()
             router.transitionHandler = viewController
             
             return router
         }
         
-        container.register(MotivationsPresenter.self) { (resolver: Resolver, viewController: MotivationsViewController) in
+        container.register(MotivationsPresenter.self) { (r: Resolver, viewController: MotivationsViewController) in
             let presenter = MotivationsPresenter()
             presenter.view = viewController
-            presenter.interactor = resolver.resolve(MotivationsInteractor.self, argument: presenter)
-            presenter.router = resolver.resolve(MotivationsRouter.self, argument: viewController)
+            presenter.interactor = r.resolve(MotivationsInteractor.self, argument: presenter)
+            presenter.router = r.resolve(MotivationsRouter.self, argument: viewController)
             
             return presenter
         }
         
+        container.register(MotivationsDataDisplayManager.self) { (r: Resolver, viewController: MotivationsViewController) in
+            let dataDisplayManagerImpl = MotivationsDataDisplayManagerImpl()
+            dataDisplayManagerImpl.output = viewController
+            
+            return dataDisplayManagerImpl
+        }
+        
         container.storyboardInitCompleted(MotivationsViewController.self) { r, viewController in
             viewController.output = r.resolve(MotivationsPresenter.self, argument: viewController)
+            viewController.dataDisplayManager = r.resolve(MotivationsDataDisplayManager.self, argument: viewController)
         }
     }
     

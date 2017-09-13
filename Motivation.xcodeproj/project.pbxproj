@@ -35,6 +35,10 @@
 		FA2F474F1F09605C007C3424 /* NotificationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA2F474E1F09605C007C3424 /* NotificationService.swift */; };
 		FA2F47511F09609A007C3424 /* NotificationServiceImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA2F47501F09609A007C3424 /* NotificationServiceImpl.swift */; };
 		FA42EAE61F0A58B40053BA08 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = FA42EAE51F0A58B40053BA08 /* GoogleService-Info.plist */; };
+		FA8525AF1F69C17D00222E17 /* MotivationsDataDisplayManagerImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA8525AE1F69C17D00222E17 /* MotivationsDataDisplayManagerImpl.swift */; };
+		FA8525B11F69C18C00222E17 /* MotivationsDataDisplayManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA8525B01F69C18C00222E17 /* MotivationsDataDisplayManager.swift */; };
+		FA8525B31F69C5ED00222E17 /* MotivationsDataDisplayManagerOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA8525B21F69C5ED00222E17 /* MotivationsDataDisplayManagerOutput.swift */; };
+		FA8525B61F69C82B00222E17 /* ServiceAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA8525B51F69C82B00222E17 /* ServiceAssembly.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -73,6 +77,10 @@
 		FA42EAE11F097E690053BA08 /* Motivation.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; name = Motivation.entitlements; path = ../Motivation.entitlements; sourceTree = "<group>"; };
 		FA42EAE31F09EF440053BA08 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FA42EAE51F0A58B40053BA08 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		FA8525AE1F69C17D00222E17 /* MotivationsDataDisplayManagerImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MotivationsDataDisplayManagerImpl.swift; sourceTree = "<group>"; };
+		FA8525B01F69C18C00222E17 /* MotivationsDataDisplayManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MotivationsDataDisplayManager.swift; sourceTree = "<group>"; };
+		FA8525B21F69C5ED00222E17 /* MotivationsDataDisplayManagerOutput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MotivationsDataDisplayManagerOutput.swift; sourceTree = "<group>"; };
+		FA8525B51F69C82B00222E17 /* ServiceAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceAssembly.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -262,6 +270,7 @@
 		FA140EC01F080B43007A3ADD /* View */ = {
 			isa = PBXGroup;
 			children = (
+				FA8525AD1F69C15A00222E17 /* DataDisplayManager */,
 				FA140ECA1F080BB6007A3ADD /* MotivationsViewController.swift */,
 				FA140ED61F080C65007A3ADD /* MotivationsViewInput.swift */,
 				FA140ED81F080C6B007A3ADD /* MotivationsViewOutput.swift */,
@@ -326,6 +335,7 @@
 			isa = PBXGroup;
 			children = (
 				FA140EF71F081817007A3ADD /* ApplicationAssembly */,
+				FA8525B41F69C81300222E17 /* ServiceAssembly */,
 			);
 			path = Assemblies;
 			sourceTree = "<group>";
@@ -412,6 +422,24 @@
 				FA42EAE11F097E690053BA08 /* Motivation.entitlements */,
 			);
 			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		FA8525AD1F69C15A00222E17 /* DataDisplayManager */ = {
+			isa = PBXGroup;
+			children = (
+				FA8525B01F69C18C00222E17 /* MotivationsDataDisplayManager.swift */,
+				FA8525AE1F69C17D00222E17 /* MotivationsDataDisplayManagerImpl.swift */,
+				FA8525B21F69C5ED00222E17 /* MotivationsDataDisplayManagerOutput.swift */,
+			);
+			path = DataDisplayManager;
+			sourceTree = "<group>";
+		};
+		FA8525B41F69C81300222E17 /* ServiceAssembly */ = {
+			isa = PBXGroup;
+			children = (
+				FA8525B51F69C82B00222E17 /* ServiceAssembly.swift */,
+			);
+			path = ServiceAssembly;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -550,13 +578,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				FA140ED11F080C1E007A3ADD /* MotivationsPresenter.swift in Sources */,
+				FA8525B11F69C18C00222E17 /* MotivationsDataDisplayManager.swift in Sources */,
+				FA8525B61F69C82B00222E17 /* ServiceAssembly.swift in Sources */,
 				FA140EF91F081817007A3ADD /* ApplicationAssembly.swift in Sources */,
+				FA8525B31F69C5ED00222E17 /* MotivationsDataDisplayManagerOutput.swift in Sources */,
 				FA140ECD1F080BF4007A3ADD /* MotivationsRouter.swift in Sources */,
 				FA140EF41F081505007A3ADD /* MotivationCollectionViewCell.swift in Sources */,
 				FA2F474F1F09605C007C3424 /* NotificationService.swift in Sources */,
 				FA140ECF1F080BFD007A3ADD /* MotivationsRouterInput.swift in Sources */,
 				FA2F47511F09609A007C3424 /* NotificationServiceImpl.swift in Sources */,
 				FA140ED51F080C53007A3ADD /* MotivationsAssembly.swift in Sources */,
+				FA8525AF1F69C17D00222E17 /* MotivationsDataDisplayManagerImpl.swift in Sources */,
 				FA140ECB1F080BB6007A3ADD /* MotivationsViewController.swift in Sources */,
 				FA140F0B1F08E2B9007A3ADD /* LocalizationConstants.swift in Sources */,
 				FA140EFE1F082007007A3ADD /* Motivation.swift in Sources */,

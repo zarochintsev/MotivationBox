@@ -10,7 +10,7 @@ import Foundation
 
 protocol MotivationsViewInput: class {
     
-    func updateMotivations(_ elements: [Motivation])
+    func configureWith(_ elements: [Motivation])
     
     func scrollToPenultimateItem()
 }
