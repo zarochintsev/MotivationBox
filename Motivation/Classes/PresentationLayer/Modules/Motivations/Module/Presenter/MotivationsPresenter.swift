@@ -18,6 +18,9 @@ class MotivationsPresenter {
     
     /// Reference to the Router.
     var router: MotivationsRouterInput!
+    
+    /// Reference to the ShareService.
+    var shareService: ShareService!
 }
 
 // MARK: - MotivationsViewOutput
@@ -33,8 +36,7 @@ extension MotivationsPresenter: MotivationsViewOutput {
     }
     
     func didTapOnMotivation(title: String, motivation: String) {
-        let shareText = "\(title)\n\n\(motivation)"
-        router.shareMotivation(motivation: shareText)
+        shareService.shareMotivation(title: title, motivation: motivation)
     }
     
 }

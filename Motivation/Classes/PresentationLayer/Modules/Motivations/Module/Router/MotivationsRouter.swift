@@ -20,9 +20,4 @@ class MotivationsRouter {
 
 extension MotivationsRouter: MotivationsRouterInput {
     
-    func shareMotivation(motivation: String) {
-        let activityViewController = UIActivityViewController(activityItems: [motivation], applicationActivities: nil)
-        (transitionHandler as! UIViewController).present(activityViewController, animated: true, completion: nil)
-    }
-    
 }

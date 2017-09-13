@@ -11,8 +11,13 @@ import Swinject
 class ServiceAssembly: Assembly {
     
     func assemble(container: Container) {
+        
         container.register(NotificationService.self) { (r: Resolver) in
             return NotificationServiceImpl()
+        }
+        
+        container.register(ShareService.self) { (r: Resolver) in
+            return ShareServiceImpl()
         }
     }
     

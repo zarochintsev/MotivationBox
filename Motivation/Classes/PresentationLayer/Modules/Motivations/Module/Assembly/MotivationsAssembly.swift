@@ -33,6 +33,7 @@ class MotivationsAssembly: Assembly {
             presenter.view = viewController
             presenter.interactor = r.resolve(MotivationsInteractor.self, argument: presenter)
             presenter.router = r.resolve(MotivationsRouter.self, argument: viewController)
+            presenter.shareService = r.resolve(ShareService.self)
             
             return presenter
         }
