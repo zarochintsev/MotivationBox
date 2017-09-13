@@ -17,7 +17,7 @@ final class ApplicationAssembly {
     class var assembler: Assembler {
         return Assembler([
             MotivationsAssembly(),
-            MainAssembly()
+            ServiceAssembly()
         ])
     }
     
@@ -38,7 +38,7 @@ extension SwinjectStoryboard {
 }
 
 
-class MainAssembly: Assembly {
+class ServiceAssembly: Assembly {
     
     func assemble(container: Container) {
         container.register(NotificationService.self) { (r: Resolver) in
