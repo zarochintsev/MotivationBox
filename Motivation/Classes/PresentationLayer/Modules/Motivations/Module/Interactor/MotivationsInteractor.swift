@@ -13,7 +13,7 @@ class MotivationsInteractor: MotivationsInteractorInput {
     // MARK: - Constants
     
     private struct C {
-        static let startIndex = 139
+        static let startIndex = 89
     }
     
     /// Reference to the Presenter's output interface.
@@ -28,12 +28,15 @@ class MotivationsInteractor: MotivationsInteractorInput {
         var elements: [Motivation] = []
         
         for index in C.startIndex...day {
-            let motivation = Motivation(title: "\(LS.Common.day.localized()) \(index)", message: "\(index)")
+            let title = "\(LS.Common.day.localized()) \(index)"
+            let message = "\(index)".localized()
+            
+            let motivation = Motivation(title: title, message: message)
             
             elements.append(motivation)
         }
         
-        elements.append(Motivation(title: "\(LS.Common.day.localized()) \(day+1)", message: LS.Motivations.new))
+        elements.append(Motivation(title: "\(LS.Common.day.localized()) \(day+1)", message: LS.Motivations.new.localized()))
         
         output.updatedMotivations(elements)
     }

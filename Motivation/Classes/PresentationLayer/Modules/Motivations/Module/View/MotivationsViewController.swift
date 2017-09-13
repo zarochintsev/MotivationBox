@@ -23,6 +23,12 @@ class MotivationsViewController: UIViewController, MotivationsViewInput {
                 static let identity = CGAffineTransform.identity
             }
         }
+        struct Collection {
+            static let cellHeight: Float = 320.0
+            static let lineSpacing: Float = 15.0
+            static let sideEdgeInset: Float = 30.0
+            static let scaleFactor: Float = 0.11
+        }
     }
     
     
@@ -35,8 +41,6 @@ class MotivationsViewController: UIViewController, MotivationsViewInput {
     
     /// Motivations array
     fileprivate var motivations: [Motivation] = []
-    
-    fileprivate var isFirstTimeTransform = true
     
     
     // MARK: - Public
@@ -65,8 +69,6 @@ class MotivationsViewController: UIViewController, MotivationsViewInput {
     // MARK: - MotivationsViewInput
     
     func updateMotivations(_ elements: [Motivation]) {
-        isFirstTimeTransform = true
-        
         motivations.removeAll()
         motivations.append(contentsOf: elements)
         
@@ -87,14 +89,19 @@ class MotivationsViewController: UIViewController, MotivationsViewInput {
         collectionView.dataSource = self
         collectionView.delegate = self
     }
-
+    
+    
+    // MARK: - UIScrollViewDelegate
     
     func scrollViewWillEndDragging(_ scrollView: UIScrollView, withVelocity velocity: CGPoint, targetContentOffset: UnsafeMutablePointer<CGPoint>) {
-        let pageWidth = Float(UIScreen.main.bounds.size.width - 100)
+        let width = Float(scrollView.frame.width)
+        let cellWidth = Float(width - C.Collection.sideEdgeInset * 2)
+        
+        let pageWidth = Float(cellWidth + C.Collection.lineSpacing)
         
         let currentOffset = Float(scrollView.contentOffset.x)
         let targetOffset = Float(targetContentOffset.pointee.x)
-        var newTargetOffset: Float = 0
+        var newTargetOffset: Float = 0.0
         
         if targetOffset > currentOffset {
             newTargetOffset = ceilf(currentOffset / pageWidth) * pageWidth
@@ -104,51 +111,40 @@ class MotivationsViewController: UIViewController, MotivationsViewInput {
         
         if newTargetOffset < 0 {
             newTargetOffset = 0
-        } else if (newTargetOffset > Float(scrollView.contentSize.width)) {
-            newTargetOffset = Float(Float(scrollView.contentSize.width))
+        } else if newTargetOffset > Float(scrollView.contentSize.width) {
+            newTargetOffset = Float(scrollView.contentSize.width)
         }
         
         targetContentOffset.pointee.x = CGFloat(currentOffset)
         scrollView.setContentOffset(CGPoint(x: CGFloat(newTargetOffset), y: scrollView.contentOffset.y), animated: true)
-        
-        var index = Int(newTargetOffset / pageWidth)
-        
-        if index == 0 {
-            var cell = collectionView.cellForItem(at: IndexPath(item: index, section: 0))
-            UIView.animate(withDuration: C.Animation.duration, animations: {
-                cell?.transform = C.Animation.Transform.identity
-                cell?.alpha = 1
-            })
-            
-            cell = collectionView.cellForItem(at: IndexPath(item: index+1, section: 0))
-            UIView.animate(withDuration: C.Animation.duration, animations: {
-                cell?.transform = C.Animation.Transform.scale
-                cell?.alpha = 0.5
-            })
-            
-        } else {
-            
-            var cell = collectionView.cellForItem(at: IndexPath(item: index, section: 0))
-            UIView.animate(withDuration: C.Animation.duration, animations: {
-                cell?.transform = C.Animation.Transform.identity
-                cell?.alpha = 1
-            })
-            
-            index -= 1
-            cell = collectionView.cellForItem(at: IndexPath(item: index, section: 0))
-            UIView.animate(withDuration: C.Animation.duration, animations: {
-                cell?.transform = C.Animation.Transform.scale
-                cell?.alpha = 0.5
-            })
-            
-            index += 1
-            index += 1
-            cell = collectionView.cellForItem(at: IndexPath(item: index, section: 0))
-            UIView.animate(withDuration: C.Animation.duration, animations: {
-                cell?.transform = C.Animation.Transform.scale
-                cell?.alpha = 0.5
-            })
+    }
+    
+    func scrollViewDidScroll(_ scrollView: UIScrollView) {
+        for cell in collectionView.visibleCells as! [MotivationCollectionViewCell] {
+            self.scrollView(scrollView: scrollView, transformCell: cell)
         }
+    }
+    
+    // MARK: - Private
+    
+    func scrollView(scrollView: UIScrollView, transformCell cell: MotivationCollectionViewCell) {
+        let width = Float(scrollView.frame.width)
+        let cellWidth = Float(width - C.Collection.sideEdgeInset * 2)
+        
+        let superviewCenter = scrollView.center
+        let cellCenter = scrollView.convert(cell.center, to: view)
+        let offset = Float(fabs(superviewCenter.x - cellCenter.x))
+        
+        let transformDirection = Float(cellCenter.x > superviewCenter.x ? -1.0 : 1.0)
+        
+        let scale = 1.0 - (C.Collection.scaleFactor * (offset / cellWidth))
+        let translate = ((cellWidth - cellWidth * scale) / 2) * transformDirection
+        
+        var transform = CGAffineTransform.identity
+        transform = transform.scaledBy(x: CGFloat(scale), y: CGFloat(scale))
+        transform = transform.translatedBy(x: CGFloat(translate), y: CGFloat(0.0))
+
+        cell.layerView.transform = transform
     }
 }
 
@@ -156,7 +152,7 @@ class MotivationsViewController: UIViewController, MotivationsViewInput {
 
 extension MotivationsViewController: UICollectionViewDataSource {
     
-    public func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return motivations.count
     }
     
@@ -167,52 +163,51 @@ extension MotivationsViewController: UICollectionViewDataSource {
         let motivation = motivations[indexPath.row]
         cell.configureWith(motivation)
         
-        // make a bool and set YES initially, this check will prevent fist load transform
-        if (indexPath.row == motivations.count - 2 && isFirstTimeTransform) {
-            isFirstTimeTransform = false
-            cell.alpha = 1
-            cell.transform = C.Animation.Transform.identity
-        } else {
-            // the new cell will always be transform and without animation
-            cell.transform = C.Animation.Transform.scale
-            cell.alpha = 0.5
-        }
-        
         return cell
     }
     
 }
-
 
 // MARK: - UICollectionViewDataSource
 
 extension MotivationsViewController: UICollectionViewDelegate {
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        collectionView.deselectItem(at: indexPath, animated: true)
+        collectionView.scrollToItem(at: indexPath, at: .centeredHorizontally, animated: false)
+        
+        // If selected last cell, return
+        if (indexPath.row == self.motivations.count - 1) {
+            return
+        }
+        
+        let motivation = motivations[indexPath.row]
+        output.didTapOnMotivation(title: motivation.title, motivation: motivation.message)
     }
     
 }
-
 
 // MARK: - UICollectionViewDelegateFlowLayout
 
 extension MotivationsViewController: UICollectionViewDelegateFlowLayout {
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        let width = UIScreen.main.bounds.width - 100
-        let height = UIScreen.main.bounds.height - 200
+        let width = Float(collectionView.frame.width)
+        let cellWidth = Float(width - C.Collection.sideEdgeInset * 2)
         
-        return CGSize(width: width, height: height)
+        return CGSize(width: CGFloat(cellWidth), height: CGFloat(C.Collection.cellHeight))
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
+        return CGFloat(C.Collection.lineSpacing)
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumInteritemSpacingForSectionAt section: Int) -> CGFloat {
+        return 0.0
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
-        let frameWidth = UIScreen.main.bounds.size.width
-        let cellWidth: CGFloat = UIScreen.main.bounds.size.width - 100
-        
-        let result = (frameWidth - cellWidth) / 2
-        
-        return UIEdgeInsets(top: 0, left: result, bottom: 0, right: result)
+        let topEdgeInset = CGFloat((Float(collectionView.frame.height) - C.Collection.cellHeight) / 2)
+        return UIEdgeInsets(top: topEdgeInset, left: CGFloat(C.Collection.sideEdgeInset), bottom: topEdgeInset, right: CGFloat(C.Collection.sideEdgeInset))
     }
     
 }

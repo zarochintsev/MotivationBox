@@ -32,6 +32,11 @@ extension MotivationsPresenter: MotivationsViewOutput {
         view.scrollToPenultimateItem()
     }
     
+    func didTapOnMotivation(title: String, motivation: String) {
+        let shareText = "\(title)\n\n\(motivation)"
+        router.shareMotivation(motivation: shareText)
+    }
+    
 }
 
 // MARK: - MotivationsInteractorOutput

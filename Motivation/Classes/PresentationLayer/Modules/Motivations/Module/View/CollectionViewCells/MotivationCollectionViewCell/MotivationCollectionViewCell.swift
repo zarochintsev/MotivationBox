@@ -36,7 +36,7 @@ class MotivationCollectionViewCell: UICollectionViewCell {
     
     func configureWith(_ motivation: Motivation) {
         titleLabel.text = motivation.title
-        messageLabel.text = motivation.message.localized()
+        messageLabel.text = motivation.message
         
     }
     

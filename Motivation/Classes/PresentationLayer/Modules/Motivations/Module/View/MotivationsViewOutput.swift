@@ -13,4 +13,6 @@ protocol MotivationsViewOutput: class {
     func viewDidLoad()
     
     func viewDidLayoutSubviews()
+    
+    func didTapOnMotivation(title: String, motivation: String)
 }
