@@ -474,7 +474,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 86E6C4EFD64B9725837DBF2F92B324AC /* Build configuration list for PBXNativeTarget "Motivation" */;
 			buildPhases = (
-				C37BAB0F97EB60388A61B054369E8640 /* [CP] Check Pods Manifest.lock */,
+				2DA705BACED6F3B1734650F3B06AAC25 /* [CP] Check Pods Manifest.lock */,
 				9E42E167B6E83CDD890CECEB8B271AAE /* Sources */,
 				9EBEFA035C532FEEEF56B2FFB4C63E5F /* Frameworks */,
 				EDE636B917A362C7C18F2813E1AB87B3 /* Resources */,
@@ -576,7 +576,7 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Motivation/Pods-Motivation-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		C37BAB0F97EB60388A61B054369E8640 /* [CP] Check Pods Manifest.lock */ = {
+		2DA705BACED6F3B1734650F3B06AAC25 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
