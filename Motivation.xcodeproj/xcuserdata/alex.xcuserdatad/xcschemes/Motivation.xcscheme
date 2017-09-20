@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "0830"
+   LastUpgradeVersion = "0900"
    version = "1.7">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -14,7 +14,7 @@
                <EnvironmentBuildable>
                   <BuildableReference
                      BuildableIdentifier = "primary"
-                     BlueprintIdentifier = "FA140E991F07F4A7007A3ADD"
+                     BlueprintIdentifier = "1E4EEB8DBB5B20CA825327048AA38199"
                      BuildableName = "Motivation.app"
                      BlueprintName = "Motivation"
                      ReferencedContainer = "container:Motivation.xcodeproj">
@@ -32,7 +32,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "FA140E991F07F4A7007A3ADD"
+               BlueprintIdentifier = "1E4EEB8DBB5B20CA825327048AA38199"
                BuildableName = "Motivation.app"
                BlueprintName = "Motivation"
                ReferencedContainer = "container:Motivation.xcodeproj">
@@ -51,7 +51,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "FA140E991F07F4A7007A3ADD"
+            BlueprintIdentifier = "1E4EEB8DBB5B20CA825327048AA38199"
             BuildableName = "Motivation.app"
             BlueprintName = "Motivation"
             ReferencedContainer = "container:Motivation.xcodeproj">
@@ -75,7 +75,7 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "FA140E991F07F4A7007A3ADD"
+            BlueprintIdentifier = "1E4EEB8DBB5B20CA825327048AA38199"
             BuildableName = "Motivation.app"
             BlueprintName = "Motivation"
             ReferencedContainer = "container:Motivation.xcodeproj">
@@ -94,7 +94,7 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "FA140E991F07F4A7007A3ADD"
+            BlueprintIdentifier = "1E4EEB8DBB5B20CA825327048AA38199"
             BuildableName = "Motivation.app"
             BlueprintName = "Motivation"
             ReferencedContainer = "container:Motivation.xcodeproj">
