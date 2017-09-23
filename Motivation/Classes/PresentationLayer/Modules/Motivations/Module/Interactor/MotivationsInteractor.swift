@@ -8,19 +8,21 @@
 
 import UIKit
 
-class MotivationsInteractor: MotivationsInteractorInput {
+class MotivationsInteractor {
     
     // MARK: - Constants
     
-    private struct C {
+    fileprivate struct C {
         static let startIndex = 89
     }
     
     /// Reference to the Presenter's output interface.
     weak var output: MotivationsInteractorOutput!
-    
-    
-    // MARK: - MotivationsInteractorInput
+}
+
+// MAKR: - MotivationsInteractorInput
+
+extension MotivationsInteractor: MotivationsInteractorInput {
     
     func requestMotivations() {
         let day = Calendar(identifier: Calendar.Identifier.iso8601).ordinality(of: .day, in: .year, for: Date())!
@@ -40,5 +42,4 @@ class MotivationsInteractor: MotivationsInteractorInput {
         
         output.updatedMotivations(elements)
     }
-    
 }

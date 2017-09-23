@@ -8,53 +8,23 @@
 
 import UIKit
 
-class MotivationsViewController: UIViewController, MotivationsViewInput {
-    
-    // MARK: - Constants
-    
-    fileprivate struct C {
-        struct CellReuseIdentifiers {
-            static let Motivation = "MotivationCell"
-        }
-        struct Animation {
-            static let duration = 0.8
-            struct Transform {
-                static let scale = CGAffineTransform(scaleX: 0.8, y: 0.8)
-                static let identity = CGAffineTransform.identity
-            }
-        }
-        struct Collection {
-            static let cellHeight: Float = 320.0
-            static let lineSpacing: Float = 15.0
-            static let sideEdgeInset: Float = 30.0
-            static let scaleFactor: Float = 0.11
-        }
-    }
-    
+class MotivationsViewController: UIViewController {
     
     // MARK: - Outlets
     
     @IBOutlet weak var collectionView: UICollectionView!
-    
-    
-    // MARK: - Variables
-    
-    /// Motivations array
-    fileprivate var motivations: [Motivation] = []
-    
     
     // MARK: - Public
     
     /// Reference to the Presenter's output interface.
     var output: MotivationsViewOutput!
     
+    var dataDisplayManager: MotivationsDataDisplayManager!
     
     // MARK: - Lifecycle
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        collectionViewSetup()
         
         output.viewDidLoad()
     }
@@ -64,150 +34,29 @@ class MotivationsViewController: UIViewController, MotivationsViewInput {
         
         output.viewDidLayoutSubviews()
     }
+ 
+}
+
+// MARK: - MotivationsViewInput
+
+extension MotivationsViewController: MotivationsViewInput {
     
-    
-    // MARK: - MotivationsViewInput
-    
-    func updateMotivations(_ elements: [Motivation]) {
-        motivations.removeAll()
-        motivations.append(contentsOf: elements)
-        
-        collectionView.reloadData()
+    func configureWith(_ elements: [Motivation]) {
+        dataDisplayManager.configureWith(view, collectionView: collectionView, motivations: elements)
     }
     
     func scrollToPenultimateItem() {
-        let indexPath = NSIndexPath(item: motivations.count - 2, section: 0) as IndexPath
-        collectionView.scrollToItem(at: indexPath, at: .centeredHorizontally, animated: false)
-    }
-    
-    
-    // MARK: - View Setup
-    
-    private func collectionViewSetup() {
-        let nib = UINib(nibName: MotivationCollectionViewCell.className, bundle: nil)
-        collectionView.register(nib, forCellWithReuseIdentifier: C.CellReuseIdentifiers.Motivation)
-        collectionView.dataSource = self
-        collectionView.delegate = self
-    }
-    
-    
-    // MARK: - UIScrollViewDelegate
-    
-    func scrollViewWillEndDragging(_ scrollView: UIScrollView, withVelocity velocity: CGPoint, targetContentOffset: UnsafeMutablePointer<CGPoint>) {
-        let width = Float(scrollView.frame.width)
-        let cellWidth = Float(width - C.Collection.sideEdgeInset * 2)
-        
-        let pageWidth = Float(cellWidth + C.Collection.lineSpacing)
-        
-        let currentOffset = Float(scrollView.contentOffset.x)
-        let targetOffset = Float(targetContentOffset.pointee.x)
-        var newTargetOffset: Float = 0.0
-        
-        if targetOffset > currentOffset {
-            newTargetOffset = ceilf(currentOffset / pageWidth) * pageWidth
-        } else {
-            newTargetOffset = floorf(currentOffset / pageWidth) * pageWidth
-        }
-        
-        if newTargetOffset < 0 {
-            newTargetOffset = 0
-        } else if newTargetOffset > Float(scrollView.contentSize.width) {
-            newTargetOffset = Float(scrollView.contentSize.width)
-        }
-        
-        targetContentOffset.pointee.x = CGFloat(currentOffset)
-        scrollView.setContentOffset(CGPoint(x: CGFloat(newTargetOffset), y: scrollView.contentOffset.y), animated: true)
-    }
-    
-    func scrollViewDidScroll(_ scrollView: UIScrollView) {
-        for cell in collectionView.visibleCells as! [MotivationCollectionViewCell] {
-            self.scrollView(scrollView: scrollView, transformCell: cell)
-        }
-    }
-    
-    // MARK: - Private
-    
-    func scrollView(scrollView: UIScrollView, transformCell cell: MotivationCollectionViewCell) {
-        let width = Float(scrollView.frame.width)
-        let cellWidth = Float(width - C.Collection.sideEdgeInset * 2)
-        
-        let superviewCenter = scrollView.center
-        let cellCenter = scrollView.convert(cell.center, to: view)
-        let offset = Float(fabs(superviewCenter.x - cellCenter.x))
-        
-        let transformDirection = Float(cellCenter.x > superviewCenter.x ? -1.0 : 1.0)
-        
-        let scale = 1.0 - (C.Collection.scaleFactor * (offset / cellWidth))
-        let translate = ((cellWidth - cellWidth * scale) / 2) * transformDirection
-        
-        var transform = CGAffineTransform.identity
-        transform = transform.scaledBy(x: CGFloat(scale), y: CGFloat(scale))
-        transform = transform.translatedBy(x: CGFloat(translate), y: CGFloat(0.0))
-
-        cell.layerView.transform = transform
-    }
-}
-
-// MARK: - UICollectionViewDataSource
-
-extension MotivationsViewController: UICollectionViewDataSource {
-    
-    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return motivations.count
-    }
-    
-    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let id = C.CellReuseIdentifiers.Motivation
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: id, for: indexPath) as! MotivationCollectionViewCell
-        
-        let motivation = motivations[indexPath.row]
-        cell.configureWith(motivation)
-        
-        return cell
+        dataDisplayManager.scrollToPenultimateItem()
     }
     
 }
 
-// MARK: - UICollectionViewDataSource
+// MARK: - MotivationsDataDisplayManagerOutput
 
-extension MotivationsViewController: UICollectionViewDelegate {
+extension MotivationsViewController: MotivationsDataDisplayManagerOutput {
     
-    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        collectionView.scrollToItem(at: indexPath, at: .centeredHorizontally, animated: false)
-        
-        // If selected last cell, return
-        if (indexPath.row == self.motivations.count - 1) {
-            return
-        }
-        
-        let motivation = motivations[indexPath.row]
-        output.didTapOnMotivation(title: motivation.title, motivation: motivation.message)
-    }
-    
-}
-
-// MARK: - UICollectionViewDelegateFlowLayout
-
-extension MotivationsViewController: UICollectionViewDelegateFlowLayout {
-    
-    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        let width = Float(collectionView.frame.width)
-        let cellWidth = Float(width - C.Collection.sideEdgeInset * 2)
-        
-        return CGSize(width: CGFloat(cellWidth), height: CGFloat(C.Collection.cellHeight))
-    }
-    
-    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
-        return CGFloat(C.Collection.lineSpacing)
-    }
-    
-    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumInteritemSpacingForSectionAt section: Int) -> CGFloat {
-        return 0.0
-    }
-    
-    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
-        let topEdgeInset = CGFloat((Float(collectionView.frame.height) - C.Collection.cellHeight) / 2)
-        return UIEdgeInsets(top: topEdgeInset, left: CGFloat(C.Collection.sideEdgeInset), bottom: topEdgeInset, right: CGFloat(C.Collection.sideEdgeInset))
+    func didTapOnMotivation(title: String, motivation: String) {
+        output.didTapOnMotivation(title: title, motivation: motivation)
     }
     
 }

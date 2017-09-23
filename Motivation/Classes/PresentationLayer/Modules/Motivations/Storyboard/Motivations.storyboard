@@ -1,10 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina3_5" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -12,10 +14,6 @@
         <scene sceneID="YG2-R4-24S">
             <objects>
                 <viewController storyboardIdentifier="MotivationsViewController" id="e1t-ph-ql0" customClass="MotivationsViewController" customModule="Motivation" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="DTh-kW-rN6"/>
-                        <viewControllerLayoutGuide type="bottom" id="w0f-FL-ht2"/>
-                    </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="ma6-q8-WcF">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -34,11 +32,12 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="w0f-FL-ht2" firstAttribute="top" secondItem="uJ5-X4-LJa" secondAttribute="bottom" id="E8h-dP-j3j"/>
-                            <constraint firstItem="uJ5-X4-LJa" firstAttribute="leading" secondItem="ma6-q8-WcF" secondAttribute="leading" id="GS3-Pg-HRI"/>
-                            <constraint firstItem="uJ5-X4-LJa" firstAttribute="top" secondItem="DTh-kW-rN6" secondAttribute="bottom" id="cEt-qt-PPE"/>
-                            <constraint firstAttribute="trailing" secondItem="uJ5-X4-LJa" secondAttribute="trailing" id="kkN-Qs-0Ll"/>
+                            <constraint firstItem="uJ5-X4-LJa" firstAttribute="trailing" secondItem="Kp5-Vb-R4b" secondAttribute="trailing" id="4O1-6X-d44"/>
+                            <constraint firstItem="uJ5-X4-LJa" firstAttribute="top" secondItem="Kp5-Vb-R4b" secondAttribute="top" id="7Z4-NE-aSc"/>
+                            <constraint firstItem="uJ5-X4-LJa" firstAttribute="leading" secondItem="Kp5-Vb-R4b" secondAttribute="leading" id="FBQ-pj-xbK"/>
+                            <constraint firstItem="uJ5-X4-LJa" firstAttribute="bottom" secondItem="Kp5-Vb-R4b" secondAttribute="bottom" id="e96-ug-oEu"/>
                         </constraints>
+                        <viewLayoutGuide key="safeArea" id="Kp5-Vb-R4b"/>
                     </view>
                     <connections>
                         <outlet property="collectionView" destination="uJ5-X4-LJa" id="0sb-1q-hDx"/>
