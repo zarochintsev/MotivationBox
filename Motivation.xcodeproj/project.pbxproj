@@ -301,8 +301,8 @@
 		7212E0EF8A8400EA896BDF8C54B79BBE /* Tests */ = {
 			isa = PBXGroup;
 			children = (
+				5FEB7C50D31F8062D79A5CC639151C38 /* Info.plist */,
 				811AD425DBA7D2D52DE3B3E76B0694D2 /* Extensions */,
-				C6423197E303F50C6D0963C71643E481 /* Supporting */,
 			);
 			path = Tests;
 			sourceTree = "<group>";
@@ -488,14 +488,6 @@
 				0CD7D665DFB4B73A67E4A251E0281C72 /* LocalizationConstants */,
 			);
 			path = Constants;
-			sourceTree = "<group>";
-		};
-		C6423197E303F50C6D0963C71643E481 /* Supporting */ = {
-			isa = PBXGroup;
-			children = (
-				5FEB7C50D31F8062D79A5CC639151C38 /* Info.plist */,
-			);
-			path = Supporting;
 			sourceTree = "<group>";
 		};
 		FB2F9DA37D304F153EB25296BAA96F69 /* Presenter */ = {
