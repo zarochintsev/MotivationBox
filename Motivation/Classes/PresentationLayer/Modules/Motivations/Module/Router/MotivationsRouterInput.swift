@@ -10,5 +10,4 @@ import Foundation
 
 protocol MotivationsRouterInput: class {
     
-    func shareMotivation(motivation: String)
 }

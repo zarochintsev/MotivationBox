@@ -16,7 +16,6 @@ class MotivationCollectionViewCell: UICollectionViewCell {
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var messageLabel: UILabel!
     
-    
     // MARK: - Lifecycle
     
     override func awakeFromNib() {
@@ -31,13 +30,11 @@ class MotivationCollectionViewCell: UICollectionViewCell {
             alpha: 1)
     }
     
-    
     // MARK: - Public
     
     func configureWith(_ motivation: Motivation) {
         titleLabel.text = motivation.title
         messageLabel.text = motivation.message
-        
     }
     
 }

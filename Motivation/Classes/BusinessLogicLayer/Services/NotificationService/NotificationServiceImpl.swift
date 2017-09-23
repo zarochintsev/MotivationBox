@@ -8,7 +8,13 @@
 
 import UIKit
 
-class NotificationServiceImpl: NotificationService {
+class NotificationServiceImpl {
+    
+}
+
+// MARK: - NotificationService
+
+extension NotificationServiceImpl: NotificationService {
     
     func configure(_ application: UIApplication) {
         let userNotificationSettings = UIUserNotificationSettings(types: [.alert, .badge, .sound], categories: nil)

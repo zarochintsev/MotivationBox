@@ -9,16 +9,15 @@
 import UIKit
 import LightRoute
 
-class MotivationsRouter: MotivationsRouterInput {
+class MotivationsRouter {
     
     /// This property contain protocol protected view controller for transition.
     weak var transitionHandler: TransitionHandler!
     
+}
+
+// MARK: - MotivationsRouterInput
+
+extension MotivationsRouter: MotivationsRouterInput {
     
-    // MARK: - MotivationsRouterInput
-    
-    func shareMotivation(motivation: String) {
-        let activityViewController = UIActivityViewController(activityItems: [motivation], applicationActivities: nil)
-        (transitionHandler as! UIViewController).present(activityViewController, animated: true, completion: nil)
-    }
 }

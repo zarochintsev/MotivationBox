@@ -16,5 +16,5 @@ target 'Motivation' do
     
     pod 'LightRoute', '~> 1.0'
     
-    pod 'Firebase', '~> 4.0'
+    pod 'Firebase', '~> 4.1'
 end
