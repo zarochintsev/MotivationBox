@@ -35,6 +35,7 @@ class MotivationsAssembly: Assembly {
         container.register(MotivationsInteractor.self) { (r: Resolver, presenter: MotivationsPresenter) in
             let interactor = MotivationsInteractor()
             interactor.output = presenter
+            interactor.motivationService = r.resolve(MotivationService.self)
             
             return interactor
         }
