@@ -12,7 +12,7 @@ Looking for ways to get inspiration? Check out our Motivation Box App! Every day
 - The `Core` layer is built using compound operations concept.
 - We extensively use [Swinject](https://github.com/Swinject/Swinject) for dependency injection.
 
-## Getting Started
+## Installation
 
 1. [Download](https://developer.apple.com/xcode/download) the Xcode 9.0 release.
 1. Clone this repository.
