@@ -9,3 +9,11 @@ Looking for ways to get inspiration? Check out our Motivation Box App! Every day
 1. [Download](https://developer.apple.com/xcode/download) the Xcode 9.0 release.
 1. Clone this repository.
 1. Run `pod install` to install dependencies.
+
+## Authors
+
+- [Alex Zarochintsev](https://twitter.com/zarochintsev)
+
+## License
+
+This code is distributed under the terms and conditions of the [MIT license](LICENSE).
