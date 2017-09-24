@@ -10,7 +10,7 @@ Looking for ways to get inspiration? Check out our Motivation Box App! Every day
 - The `Presentation` layer is built using [VIPER architecture](https://github.com/rambler-digital-solutions/The-Book-of-VIPER).
 - The `BusinessLogic` layer is built using SOA.
 - The `Core` layer is built using compound operations concept.
-- We extensively use [Swinject](https://github.com/Swinject/Swinject) for dependency injection.
+- We extensively use [Swinject](https://github.com/Swinject/Swinject) and [SwinjectStoryboard](https://github.com/Swinject/SwinjectStoryboard) for dependency injection.
 
 ## Installation
 
