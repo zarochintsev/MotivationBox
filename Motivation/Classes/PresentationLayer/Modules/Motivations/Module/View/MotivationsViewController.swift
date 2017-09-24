@@ -32,7 +32,7 @@ class MotivationsViewController: UIViewController {
     
     @IBOutlet weak var collectionView: UICollectionView!
     
-    // MARK: - Public
+    // MARK: - General
     
     /// Reference to the Presenter's output interface.
     var output: MotivationsViewOutput!
