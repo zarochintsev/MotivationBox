@@ -1,5 +1,5 @@
 //
-// MotivationsInteractor.swift
+// ServiceAssembly.swift
 //
 // MIT License
 //
@@ -24,29 +24,15 @@
 // SOFTWARE.
 //
 
-import UIKit
+import Swinject
 
-class MotivationsInteractor {
+class ServiceAssembly: Assembly {
     
-    // MARK: - General
-    
-    /// Reference to the Presenter's output interface.
-    weak var output: MotivationsInteractorOutput!
-    
-    // MARK: - Services
-    
-    var motivationService: MotivationService!
-}
-
-// MAKR: - MotivationsInteractorInput
-
-extension MotivationsInteractor: MotivationsInteractorInput {
-    
-    func requestMotivations() {
-        motivationService.requestMotivations { [weak self] (elements: [Motivation]) in
-            guard let weakSelf = self else { return }
-            weakSelf.output.updatedMotivations(elements)
-        }
+    func assemble(container: Container) {
         
+        container.register(MotivationService.self) { (r: Resolver) in
+            return MotivationServiceImpl()
+        }
     }
+    
 }

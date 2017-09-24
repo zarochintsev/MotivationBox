@@ -1,5 +1,5 @@
 //
-// MotivationsInteractor.swift
+// CurrentMotivationPresenter.swift
 //
 // MIT License
 //
@@ -26,27 +26,34 @@
 
 import UIKit
 
-class MotivationsInteractor {
+class CurrentMotivationPresenter: NSObject {
     
     // MARK: - General
     
-    /// Reference to the Presenter's output interface.
-    weak var output: MotivationsInteractorOutput!
+    /// Reference to the View (weak to avoid retain cycle).
+    weak var view: CurrentMotivationViewInput!
     
-    // MARK: - Services
+    /// Reference to the Interactor's interface.
+    var interactor: CurrentMotivationInteractorInput!
     
-    var motivationService: MotivationService!
+    /// Reference to the Router.
+    var router: CurrentMotivationRouterInput!
+    
 }
 
-// MAKR: - MotivationsInteractorInput
+// MARK: - CurrentMotivationViewOutput
 
-extension MotivationsInteractor: MotivationsInteractorInput {
+extension CurrentMotivationPresenter: CurrentMotivationViewOutput {
     
-    func requestMotivations() {
-        motivationService.requestMotivations { [weak self] (elements: [Motivation]) in
-            guard let weakSelf = self else { return }
-            weakSelf.output.updatedMotivations(elements)
-        }
-        
+    func viewWillAppear() {
+        let element = interactor.todayMotivation()
+        view.configureWith(element)
     }
+    
+}
+
+// MARK: - CurrentMotivationInteractorOutput
+
+extension CurrentMotivationPresenter: CurrentMotivationInteractorOutput {
+    
 }

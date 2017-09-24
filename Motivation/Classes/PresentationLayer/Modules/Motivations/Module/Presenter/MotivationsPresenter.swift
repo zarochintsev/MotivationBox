@@ -28,6 +28,8 @@ import UIKit
 
 class MotivationsPresenter {
     
+    // MARK: - General
+    
     /// Reference to the View (weak to avoid retain cycle).
     weak var view: MotivationsViewInput!
     
@@ -36,6 +38,8 @@ class MotivationsPresenter {
     
     /// Reference to the Router.
     var router: MotivationsRouterInput!
+    
+    // MARK: - Services
     
     /// Reference to the ShareService.
     var shareService: ShareService!

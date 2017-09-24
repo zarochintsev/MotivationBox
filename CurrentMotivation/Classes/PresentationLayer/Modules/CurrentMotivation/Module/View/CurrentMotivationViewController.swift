@@ -1,5 +1,5 @@
 //
-// MotivationsViewController.swift
+// CurrentMotivationViewController.swift
 //
 // MIT License
 //
@@ -25,56 +25,67 @@
 //
 
 import UIKit
+import NotificationCenter
 
-class MotivationsViewController: UIViewController {
+class CurrentMotivationViewController: UIViewController {
     
     // MARK: - Outlets
     
-    @IBOutlet weak var collectionView: UICollectionView!
+    @IBOutlet weak var wrapperView: UIView!
+    @IBOutlet weak var titleLabel: UILabel!
+    @IBOutlet weak var textLabel: UILabel!
     
     // MARK: - General
     
     /// Reference to the Presenter's output interface.
-    var output: MotivationsViewOutput!
-    
-    var dataDisplayManager: MotivationsDataDisplayManager!
-    
+    var output: CurrentMotivationViewOutput!
+
     // MARK: - Lifecycle
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        output.viewDidLoad()
+        configureView()
     }
     
-    override func viewDidLayoutSubviews() {
-        super.viewDidLayoutSubviews()
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
         
-        output.viewDidLayoutSubviews()
-    }
- 
-}
-
-// MARK: - MotivationsViewInput
-
-extension MotivationsViewController: MotivationsViewInput {
-    
-    func configureWith(_ elements: [Motivation]) {
-        dataDisplayManager.configureWith(view, collectionView: collectionView, motivations: elements)
+        output.viewWillAppear()
     }
     
-    func scrollToPenultimateItem() {
-        dataDisplayManager.scrollToPenultimateItem()
+    // MARK: - Private
+    
+    private func configureView() {
+        extensionContext?.widgetLargestAvailableDisplayMode = .expanded
     }
     
 }
 
-// MARK: - MotivationsDataDisplayManagerOutput
+// MARK: - CurrentMotivationViewInput
 
-extension MotivationsViewController: MotivationsDataDisplayManagerOutput {
+extension CurrentMotivationViewController: CurrentMotivationViewInput {
     
-    func didTapOnMotivation(title: String, motivation: String) {
-        output.didTapOnMotivation(title: title, motivation: motivation)
+    func configureWith(_ element: Motivation) {
+        titleLabel.text = element.title
+        textLabel.text = element.message
     }
     
+}
+
+// MARK: - NCWidgetProviding
+
+extension CurrentMotivationViewController: NCWidgetProviding {
+   
+    func widgetPerformUpdate(completionHandler: (@escaping (NCUpdateResult) -> Void)) {
+        completionHandler(NCUpdateResult.newData)
+    }
+    
+    func widgetActiveDisplayModeDidChange(_ activeDisplayMode: NCWidgetDisplayMode, withMaximumSize maxSize: CGSize) {
+        if activeDisplayMode == .expanded {
+            preferredContentSize = CGSize(width: maxSize.width, height: 320)
+        } else if activeDisplayMode == .compact {
+            preferredContentSize = maxSize
+        }
+    }
 }

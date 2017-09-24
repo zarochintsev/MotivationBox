@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="M4Y-Lb-cyx">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Menlo.ttc">
+            <string>Menlo-Regular</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Current Motivation View Controller-->
+        <scene sceneID="cwh-vc-ff4">
+            <objects>
+                <viewController storyboardIdentifier="CurrentMotivationViewController" id="M4Y-Lb-cyx" customClass="CurrentMotivationViewController" customModule="CurrentMotivation" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" simulatedAppContext="notificationCenter" id="S3S-Oj-5AN">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="300"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TKX-i7-faM">
+                                <rect key="frame" x="2" y="2" width="316" height="296"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="M0V-IK-y5R">
+                                        <rect key="frame" x="16" y="16" width="284" height="35"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="35" id="BXg-nm-qjQ"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="30"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bJA-f3-8p1">
+                                        <rect key="frame" x="16" y="67" width="284" height="213"/>
+                                        <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="16"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="bJA-f3-8p1" secondAttribute="trailing" constant="16" id="0ME-Qc-urv"/>
+                                    <constraint firstItem="bJA-f3-8p1" firstAttribute="leading" secondItem="TKX-i7-faM" secondAttribute="leading" constant="16" id="HkG-Pq-ox8"/>
+                                    <constraint firstItem="bJA-f3-8p1" firstAttribute="top" secondItem="M0V-IK-y5R" secondAttribute="bottom" constant="16" id="R4u-Ta-IRY"/>
+                                    <constraint firstItem="M0V-IK-y5R" firstAttribute="leading" secondItem="TKX-i7-faM" secondAttribute="leading" constant="16" id="SMv-rD-qwF"/>
+                                    <constraint firstAttribute="bottom" secondItem="bJA-f3-8p1" secondAttribute="bottom" constant="16" id="WF8-Z5-llL"/>
+                                    <constraint firstAttribute="trailing" secondItem="M0V-IK-y5R" secondAttribute="trailing" constant="16" id="alb-Bn-mFe"/>
+                                    <constraint firstItem="M0V-IK-y5R" firstAttribute="top" secondItem="TKX-i7-faM" secondAttribute="top" constant="16" id="wZU-7r-lGS"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="TKX-i7-faM" firstAttribute="leading" secondItem="ssy-KU-ocm" secondAttribute="leading" constant="2" id="60W-Hk-9OC"/>
+                            <constraint firstItem="ssy-KU-ocm" firstAttribute="trailing" secondItem="TKX-i7-faM" secondAttribute="trailing" constant="2" id="PnF-bI-956"/>
+                            <constraint firstItem="ssy-KU-ocm" firstAttribute="bottom" secondItem="TKX-i7-faM" secondAttribute="bottom" constant="2" id="SIs-yN-x8N"/>
+                            <constraint firstItem="TKX-i7-faM" firstAttribute="top" secondItem="ssy-KU-ocm" secondAttribute="top" constant="2" id="Wac-jU-0OO"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="ssy-KU-ocm"/>
+                    </view>
+                    <extendedEdge key="edgesForExtendedLayout"/>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="320" height="300"/>
+                    <connections>
+                        <outlet property="textLabel" destination="bJA-f3-8p1" id="pay-qp-U6c"/>
+                        <outlet property="titleLabel" destination="M0V-IK-y5R" id="ptg-GX-vCY"/>
+                        <outlet property="wrapperView" destination="TKX-i7-faM" id="4y5-vW-2Cl"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vXp-U4-Rya" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-235" y="106"/>
+        </scene>
+    </scenes>
+</document>

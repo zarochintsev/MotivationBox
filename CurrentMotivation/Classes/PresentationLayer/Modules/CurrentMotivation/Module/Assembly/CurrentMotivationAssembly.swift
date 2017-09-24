@@ -1,5 +1,5 @@
 //
-// MotivationsAssembly.swift
+// CurrentMotivationAssembly.swift
 //
 // MIT License
 //
@@ -28,46 +28,37 @@ import UIKit
 import Swinject
 import SwinjectStoryboard
 
-class MotivationsAssembly: Assembly {
+class CurrentMotivationAssembly: Assembly {
     
     func assemble(container: Container) {
         
-        container.register(MotivationsInteractor.self) { (r: Resolver, presenter: MotivationsPresenter) in
-            let interactor = MotivationsInteractor()
+        container.register(CurrentMotivationInteractor.self) { (r: Resolver, presenter: CurrentMotivationPresenter) in
+            let interactor = CurrentMotivationInteractor()
             interactor.output = presenter
             interactor.motivationService = r.resolve(MotivationService.self)
             
             return interactor
         }
         
-        container.register(MotivationsRouter.self) { (r: Resolver, viewController: MotivationsViewController) in
-            let router = MotivationsRouter()
+        container.register(CurrentMotivationRouter.self) { (r: Resolver, viewController: CurrentMotivationViewController) in
+            let router = CurrentMotivationRouter()
             router.transitionHandler = viewController
             
             return router
         }
         
-        container.register(MotivationsPresenter.self) { (r: Resolver, viewController: MotivationsViewController) in
-            let presenter = MotivationsPresenter()
+        container.register(CurrentMotivationPresenter.self) { (r: Resolver, viewController: CurrentMotivationViewController) in
+            let presenter = CurrentMotivationPresenter()
             presenter.view = viewController
-            presenter.interactor = r.resolve(MotivationsInteractor.self, argument: presenter)
-            presenter.router = r.resolve(MotivationsRouter.self, argument: viewController)
-            presenter.shareService = r.resolve(ShareService.self)
+            presenter.interactor = r.resolve(CurrentMotivationInteractor.self, argument: presenter)
+            presenter.router = r.resolve(CurrentMotivationRouter.self, argument: viewController)
             
             return presenter
         }
         
-        container.register(MotivationsDataDisplayManager.self) { (r: Resolver, viewController: MotivationsViewController) in
-            let dataDisplayManagerImpl = MotivationsDataDisplayManagerImpl()
-            dataDisplayManagerImpl.output = viewController
-            
-            return dataDisplayManagerImpl
-        }
-        
-        container.storyboardInitCompleted(MotivationsViewController.self) { r, viewController in
-            viewController.output = r.resolve(MotivationsPresenter.self, argument: viewController)
-            viewController.dataDisplayManager = r.resolve(MotivationsDataDisplayManager.self, argument: viewController)
+        container.storyboardInitCompleted(CurrentMotivationViewController.self) { r, viewController in
+            viewController.output = r.resolve(CurrentMotivationPresenter.self, argument: viewController)
         }
     }
-    
+
 }
