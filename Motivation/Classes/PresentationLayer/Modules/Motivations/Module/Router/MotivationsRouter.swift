@@ -29,6 +29,8 @@ import LightRoute
 
 class MotivationsRouter {
     
+    // MARK: - General
+    
     /// This property contain protocol protected view controller for transition.
     weak var transitionHandler: TransitionHandler!
     
