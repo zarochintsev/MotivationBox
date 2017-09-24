@@ -13,8 +13,18 @@ target 'Motivation' do
     
     pod 'Swinject', '~> 2.1'
     pod 'SwinjectStoryboard', '~> 1.1'
-    
     pod 'LightRoute', '~> 1.0'
     
     pod 'Firebase', '~> 4.1'
+end
+
+target 'CurrentMotivation' do
+    # Comment this line if you're not using Swift and don't want to use dynamic frameworks
+    use_frameworks!
+    # Ignore all warnings from all pods
+    inhibit_all_warnings!
+    
+    pod 'Swinject', '~> 2.1'
+    pod 'SwinjectStoryboard', '~> 1.1'
+    pod 'LightRoute', '~> 1.0'
 end
