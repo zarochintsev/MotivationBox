@@ -37,6 +37,10 @@ class ServiceAssembly: Assembly {
         container.register(ShareService.self) { (r: Resolver) in
             return ShareServiceImpl()
         }
+        
+        container.register(MotivationService.self) { (r: Resolver) in
+            return MotivationServiceImpl()
+        }
     }
     
 }
