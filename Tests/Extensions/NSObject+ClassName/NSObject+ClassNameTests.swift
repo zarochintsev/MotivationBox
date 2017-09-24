@@ -1,5 +1,5 @@
 //
-// MotivationsInteractorOutput.swift
+// NSObject+ClassNameTests.swift
 //
 // MIT License
 //
@@ -24,9 +24,13 @@
 // SOFTWARE.
 //
 
-import Foundation
+import XCTest
 
-protocol MotivationsInteractorOutput: class {
+class NSObject_ClassNameTests: XCTestCase {
     
-    func updatedMotivations(_ elements: [Motivation])
+    func testClassName() {
+        let className = NSObject.className
+        XCTAssertTrue(className == "NSObject")
+    }
+    
 }
