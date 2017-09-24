@@ -71,10 +71,10 @@
 		4557806F610C6710328BD9821882E045 /* NSObject+ClassNameTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSObject+ClassNameTests.swift"; sourceTree = "<group>"; };
 		47DAC4086C803E8B48AF28A5A0C2B75D /* Launch.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Launch.storyboard; sourceTree = "<group>"; };
 		4C63BA7FD4233DF4CC4D4EEEBD26AF01 /* Motivation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Motivation.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		50C3FAF7F55D352EB849AD5AF744C367 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		51935095CBD679E83A97B47540A94436 /* MotivationCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MotivationCollectionViewCell.swift; sourceTree = "<group>"; };
 		5CD663026C93E77FBAB92B8BF4BD59AF /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		5FA84C30FB876A844DC9465A625A301E /* MotivationCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MotivationCollectionViewCell.xib; sourceTree = "<group>"; };
-		5FEB7C50D31F8062D79A5CC639151C38 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		60F1FCA14671B0494C9E73652057A52C /* NotificationServiceImpl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationServiceImpl.swift; sourceTree = "<group>"; };
 		7001D63FC6EDF3AFB5EB3A27E5143B1D /* ShareService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareService.swift; sourceTree = "<group>"; };
 		70D72CDC32EEBE4F5AA68F11185B7858 /* MotivationsInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MotivationsInteractor.swift; sourceTree = "<group>"; };
@@ -301,8 +301,8 @@
 		7212E0EF8A8400EA896BDF8C54B79BBE /* Tests */ = {
 			isa = PBXGroup;
 			children = (
-				5FEB7C50D31F8062D79A5CC639151C38 /* Info.plist */,
 				811AD425DBA7D2D52DE3B3E76B0694D2 /* Extensions */,
+				50C3FAF7F55D352EB849AD5AF744C367 /* Info.plist */,
 			);
 			path = Tests;
 			sourceTree = "<group>";
