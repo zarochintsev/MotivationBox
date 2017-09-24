@@ -28,5 +28,5 @@ import Foundation
 
 protocol CurrentMotivationViewOutput: class {
     
-    func viewDidLoad()
+    func viewWillAppear()
 }

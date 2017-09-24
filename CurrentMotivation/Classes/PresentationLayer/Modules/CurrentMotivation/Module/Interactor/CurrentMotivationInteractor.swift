@@ -44,7 +44,6 @@ class CurrentMotivationInteractor: NSObject {
 extension CurrentMotivationInteractor: CurrentMotivationInteractorInput {
     
     func todayMotivation() -> Motivation {
-        
         return motivationService.todayMotivation()
     }
     

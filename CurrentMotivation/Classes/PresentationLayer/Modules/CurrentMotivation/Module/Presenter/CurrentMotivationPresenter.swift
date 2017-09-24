@@ -45,7 +45,7 @@ class CurrentMotivationPresenter: NSObject {
 
 extension CurrentMotivationPresenter: CurrentMotivationViewOutput {
     
-    func viewDidLoad() {
+    func viewWillAppear() {
         let element = interactor.todayMotivation()
         view.configureWith(element)
     }

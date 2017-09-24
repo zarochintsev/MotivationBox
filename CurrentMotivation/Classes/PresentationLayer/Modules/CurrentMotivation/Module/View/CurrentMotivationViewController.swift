@@ -45,9 +45,19 @@ class CurrentMotivationViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        extensionContext?.widgetLargestAvailableDisplayMode = NCWidgetDisplayMode.expanded
+        configureView()
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
         
-        output.viewDidLoad()
+        output.viewWillAppear()
+    }
+    
+    // MARK: - Private
+    
+    private func configureView() {
+        extensionContext?.widgetLargestAvailableDisplayMode = .expanded
     }
     
 }
