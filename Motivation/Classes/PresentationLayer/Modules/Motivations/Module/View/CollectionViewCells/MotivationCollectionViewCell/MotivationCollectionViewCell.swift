@@ -33,6 +33,7 @@ class MotivationCollectionViewCell: UICollectionViewCell {
     @IBOutlet weak var layerView: UIView!
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var messageLabel: UILabel!
+    @IBOutlet weak var shareIconImageView: UIImageView!
     
     // MARK: - Lifecycle
     
@@ -50,9 +51,10 @@ class MotivationCollectionViewCell: UICollectionViewCell {
     
     // MARK: - Public
     
-    func configureWith(_ motivation: Motivation) {
+    func configureWith(_ motivation: Motivation, hideShareIcon: Bool) {
         titleLabel.text = motivation.title
         messageLabel.text = motivation.message
+        shareIconImageView.isHidden = hideShareIcon
     }
     
 }

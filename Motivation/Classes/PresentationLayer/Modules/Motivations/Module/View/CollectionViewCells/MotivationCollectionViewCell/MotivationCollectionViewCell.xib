@@ -73,6 +73,7 @@
             <connections>
                 <outlet property="layerView" destination="E65-Lw-Z8U" id="aZB-fA-GC1"/>
                 <outlet property="messageLabel" destination="GD6-tM-e9Y" id="rhY-pp-eah"/>
+                <outlet property="shareIconImageView" destination="rVi-kO-hnO" id="RTL-PK-2td"/>
                 <outlet property="titleLabel" destination="53X-PI-SQS" id="Zba-ue-Z9R"/>
             </connections>
             <point key="canvasLocation" x="-173" y="46.5"/>
