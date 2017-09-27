@@ -1,5 +1,5 @@
 //
-// MotivationsInteractor.swift
+// CurrentMotivationRouter.swift
 //
 // MIT License
 //
@@ -25,28 +25,19 @@
 //
 
 import UIKit
+import LightRoute
 
-class MotivationsInteractor {
+class CurrentMotivationRouter: NSObject {
     
     // MARK: - General
     
-    /// Reference to the Presenter's output interface.
-    weak var output: MotivationsInteractorOutput!
+    /// This property contain protocol protected view controller for transition.
+    weak var transitionHandler: TransitionHandler!
     
-    // MARK: - Services
-    
-    var motivationService: MotivationService!
 }
 
-// MAKR: - MotivationsInteractorInput
+// MARK: - CurrentMotivationRouterInput
 
-extension MotivationsInteractor: MotivationsInteractorInput {
+extension CurrentMotivationRouter: CurrentMotivationRouterInput {
     
-    func requestMotivations() {
-        motivationService.requestMotivations { [weak self] (elements: [Motivation]) in
-            guard let weakSelf = self else { return }
-            weakSelf.output.updatedMotivations(elements)
-        }
-        
-    }
 }

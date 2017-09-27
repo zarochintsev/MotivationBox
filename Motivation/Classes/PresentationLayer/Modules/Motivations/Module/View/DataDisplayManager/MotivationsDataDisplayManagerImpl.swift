@@ -111,7 +111,9 @@ extension MotivationsDataDisplayManagerImpl: UICollectionViewDataSource {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: id, for: indexPath) as! MotivationCollectionViewCell
         
         let motivation = motivations[indexPath.row]
-        cell.configureWith(motivation)
+        
+        let hideShareIcon = indexPath.row == self.motivations.count - 1
+        cell.configureWith(motivation, hideShareIcon: hideShareIcon)
         
         return cell
     }

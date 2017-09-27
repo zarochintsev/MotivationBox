@@ -8,32 +8,51 @@
 
 /* Begin PBXBuildFile section */
 		01EEB62653EB3D006E137AAE20A41A47 /* ApplicationAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98D9671890A00BB0DE007596D02EDCF8 /* ApplicationAssembly.swift */; };
+		0320D5A6019DFFACF879366135750BD4 /* Pods_CurrentMotivation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B54DDE986740675E512258BC36A2927 /* Pods_CurrentMotivation.framework */; };
 		048F6DF4975AFB52ACCA5EDB479F3E1A /* NotificationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94868E28F4C2D402C6B9C45334D2843F /* NotificationService.swift */; };
 		05DA805C7DBD9DBE534F4EB9797BF078 /* MotivationsRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C41AFD08618F1E2ED77CFF589DAFA97C /* MotivationsRouter.swift */; };
+		060EB78AF7794DCDE6402D838B31B14F /* CurrentMotivationInteractorOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4459BCDF9FDB9BFFC3E1DC8DEB0264C6 /* CurrentMotivationInteractorOutput.swift */; };
+		065688FB57D8FFD604A8D90536C83CC1 /* CurrentMotivationViewInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3D5030FD67E70F9B1F184DB7F8C4D51 /* CurrentMotivationViewInput.swift */; };
 		0D3831677D75FACE01FB88D4243537A5 /* ServiceAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F0CE5D4729FB35342FA00F2620A7061 /* ServiceAssembly.swift */; };
+		1688F0802D2C52B30D776A876DDF4DA0 /* MotivationServiceImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 355E1FC5D60F05158B11F74A437D5C4A /* MotivationServiceImpl.swift */; };
 		1CCEAACE3648823CBA3A4390B256F9C9 /* String+Localization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E9D7289610A20899FA6D9B8DB851996 /* String+Localization.swift */; };
 		2312AF86C93D751CD9D456968B1854CF /* ShareServiceImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9201559255810C9F1147110B2509FCC /* ShareServiceImpl.swift */; };
+		2493A70D1722E5F381C924781B8F0EAA /* CurrentMotivationViewOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BAC89226236819264C3989801CEC291 /* CurrentMotivationViewOutput.swift */; };
+		264D1CB8EB78DA1FB9C5C6D8EC977F34 /* MotivationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E478F4D68F14722053EBBE14BC05947 /* MotivationService.swift */; };
+		2BB9D8E07A15CA01963B6AA90A2700A7 /* CurrentMotivationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8E713E32F8DC59B48967951EB61FB9C /* CurrentMotivationViewController.swift */; };
 		2FB8FC832FF5F82BC2938B5FD4F0BDDD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9FC186DAD77B648C0CC915F1569AF1A1 /* Main.storyboard */; };
 		334B8DDB1CF58B5D29979EEE9BF4A9D6 /* MotivationsAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EC1D5B61D5185B24481B559D91B9273 /* MotivationsAssembly.swift */; };
 		36870941D84D78D233DBB557935D7448 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 39445BC2631DCDEAD288F3F7F7F0FB7C /* Localizable.strings */; };
 		36C5BA53FA7EBD1CEB4C752230B5B76B /* MotivationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6CB0753CF01595CE246D156529245B6 /* MotivationsViewController.swift */; };
+		3D4BCF7CD9D409C05331225CF0442638 /* CurrentMotivationPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 249E70F9D6A85152FA7A42009A671734 /* CurrentMotivationPresenter.swift */; };
 		42E385DB525CE3BBC6C714A21564D64E /* MotivationsInteractorOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20DE7A7E0A8C815F15E4308774AA30CA /* MotivationsInteractorOutput.swift */; };
 		4EF88F86C3E0E2A15BDDC9D170D8AF2E /* LocalizationConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 448E96C2B02E109F75EDA23ED634A390 /* LocalizationConstants.swift */; };
+		514C208FBFAADAFC23D4EB0E65203B8D /* MotivationServiceImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 355E1FC5D60F05158B11F74A437D5C4A /* MotivationServiceImpl.swift */; };
+		52E5CE3F2B89964AE7B76BA6796FAB62 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 39445BC2631DCDEAD288F3F7F7F0FB7C /* Localizable.strings */; };
 		578E0DF077224C25D8AE4B8437D9A794 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2C258AA8B9B648D29F784072BBCA0C88 /* Assets.xcassets */; };
 		5A7F17798C275FC5B23C835294CE6960 /* MotivationsInteractorInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 058E06F637891EECC2FBE810CDA0BF52 /* MotivationsInteractorInput.swift */; };
 		5DDF95D925D59CB223A496832D0EEF56 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EC8A1CB0C90D85F360FD3E5E12BF899 /* AppDelegate.swift */; };
 		5ED5BB6E16A27D64AB6314AF9F0877C6 /* MotivationsInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70D72CDC32EEBE4F5AA68F11185B7858 /* MotivationsInteractor.swift */; };
 		6A382CF2E98254B32FC47F5ADF99B98E /* NSObject+ClassName.swift in Sources */ = {isa = PBXBuildFile; fileRef = C778E3C806EB2477BAFAF7C23E251408 /* NSObject+ClassName.swift */; };
 		6D92F7037C6DDC43EBA201D075666408 /* NSObject+ClassNameTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4557806F610C6710328BD9821882E045 /* NSObject+ClassNameTests.swift */; };
+		6E4013EB6E54FDF86464F86D5310763D /* CurrentMotivation.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 9296775A1D08C9C1E41A6AE2B69059F0 /* CurrentMotivation.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		73FCB7717ED9E1CBB242EA0111228EFB /* MotivationsViewInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5F4DB81E2C1A9AE377EA2551B89B20F /* MotivationsViewInput.swift */; };
 		7985C5469CEA6BC5D16D86F0B2253E7D /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D77AA5C6A476000AA4E9D2B9F44FC897 /* InfoPlist.strings */; };
 		818BEFBC373345769A03D795F8BC4E92 /* Motivations.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FEDB62B0804D038EFB74D6291E1D4C86 /* Motivations.storyboard */; };
+		9134F6AA82411467AB4D29BF565626FC /* MotivationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E478F4D68F14722053EBBE14BC05947 /* MotivationService.swift */; };
 		92110FD6822553A73D386A6C659BB4E6 /* MotivationCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51935095CBD679E83A97B47540A94436 /* MotivationCollectionViewCell.swift */; };
+		92C953F995AD83F07811E004ACEF71B8 /* MotivationServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8385D90A2170EFC120CFFB944447C1A1 /* MotivationServiceTests.swift */; };
+		968AA8D3E8314926D59486604B190760 /* NotificationCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 69D2837DDA7F56119CC4247890AE708A /* NotificationCenter.framework */; };
+		9B5365FAA7D6D7D36A0939545B2F0C97 /* CurrentMotivationAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8FD4B48C725141D1D58523B2580E143 /* CurrentMotivationAssembly.swift */; };
 		9C27A1D505FBE67FF8562B876FAD2C6E /* NSObject+ClassName.swift in Sources */ = {isa = PBXBuildFile; fileRef = C778E3C806EB2477BAFAF7C23E251408 /* NSObject+ClassName.swift */; };
 		A252EB442F414E0956C2CC0E91F26A88 /* Launch.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 47DAC4086C803E8B48AF28A5A0C2B75D /* Launch.storyboard */; };
+		A5B1471C06E2C1423BB70EF2F6FEB9EE /* LocalizationConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 448E96C2B02E109F75EDA23ED634A390 /* LocalizationConstants.swift */; };
 		B2AAF023FA79C3F428DDF77EAA9633C2 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E7486A38904FF39A888CA78371243E2F /* GoogleService-Info.plist */; };
 		B4179BFD88CCD0834B54CA0529BC0401 /* ShareService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7001D63FC6EDF3AFB5EB3A27E5143B1D /* ShareService.swift */; };
+		B674BD4189C1DBB5D3C50C34D8834D39 /* CurrentMotivationInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EB1104568B85489AFDA11319B246B09 /* CurrentMotivationInteractor.swift */; };
+		B8CB1EB7CF04016EFF49B8E189811921 /* CurrentMotivationRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC78F910A41E8C769DC8BB95CF756657 /* CurrentMotivationRouter.swift */; };
 		BC3A14F4387E3F7F6972ED27B8ED8638 /* MotivationsDataDisplayManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7871E92ACAC3936E5120960C4509B74 /* MotivationsDataDisplayManager.swift */; };
+		BE725EF41BAC6E7DA83714AD0F8BDBA8 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4910AB84D4618E185F80AF765D77D8EB /* MainInterface.storyboard */; };
 		C9AE2302FF9B0085C4EC10C2F92982AC /* Motivation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7785E56F486B2D6AD3961885DA50AC6E /* Motivation.swift */; };
 		C9CF922912C24B957028E8F5238AAEA5 /* MotivationsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F218A3CCACED3D0053F035CE8CD7A728 /* MotivationsPresenter.swift */; };
 		CAE216626DEB6BB8CD466F1603C1E11F /* MotivationsDataDisplayManagerImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BFA94093158D6990505C90AA1D222DE /* MotivationsDataDisplayManagerImpl.swift */; };
@@ -41,12 +60,25 @@
 		D577461B1FD3C9ADF42AB4DB2BE74841 /* MotivationsDataDisplayManagerOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D4EFE13CF137130B30984FCB67F6EFE /* MotivationsDataDisplayManagerOutput.swift */; };
 		DF7BC7CAC22330FF3A3D3C4D4E727F08 /* NotificationServiceImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60F1FCA14671B0494C9E73652057A52C /* NotificationServiceImpl.swift */; };
 		DFDEED9E4BCF141CBC0CCF6DEF72EDE5 /* MotivationsRouterInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE8BCA3BDD0737E40E5919AB54FD5455 /* MotivationsRouterInput.swift */; };
+		E1CDEA4CA3A2F1DAED685C891DB5AC18 /* CurrentMotivationRouterInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07FB4F42A45361FC995A0FF80D476D60 /* CurrentMotivationRouterInput.swift */; };
 		E8FCBD4AB3C897C88109B731D3E1DDE9 /* MotivationCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5FA84C30FB876A844DC9465A625A301E /* MotivationCollectionViewCell.xib */; };
 		E970826F869F82E72C1B2A92108AF616 /* MotivationsViewOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBD2DEF451E5E6268E79C511413156C3 /* MotivationsViewOutput.swift */; };
+		ED08875B7810495A37FB2A0FFAAF8A0F /* Motivation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7785E56F486B2D6AD3961885DA50AC6E /* Motivation.swift */; };
 		F62080568F4F5D2DF7199ABDAF530C17 /* UIWindow+TopViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1064E334327BD15667EA489999122CF /* UIWindow+TopViewController.swift */; };
+		F68D11A312477AB904D34F124B2AE257 /* String+Localization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E9D7289610A20899FA6D9B8DB851996 /* String+Localization.swift */; };
+		F708D046B856509C5EB119B6405BF989 /* ServiceAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFB0650F09044708C86CD85F6F167C16 /* ServiceAssembly.swift */; };
+		F76789122920C1EA29E5D3EA971DB6A4 /* ApplicationAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = C99DB39388941CF00AD14E58A869BC2B /* ApplicationAssembly.swift */; };
+		FFFE6A2F184FF8E2AEADD5DB90C84A65 /* CurrentMotivationInteractorInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 778EFB29EB67A1DE16F671B1AE0A5E42 /* CurrentMotivationInteractorInput.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		321E4E4895E97ADF4A609B8D12DF5A6C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DDDED79B073D984CCAF4EDB00798D4DC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 71780671B6A8565CBBC4991190D28756;
+			remoteInfo = CurrentMotivation;
+		};
 		B3AB7063E8485184BA01E3DE8F194085 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = DDDED79B073D984CCAF4EDB00798D4DC /* Project object */;
@@ -56,9 +88,24 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		3BF163291EA006E64A734295890543DD /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				6E4013EB6E54FDF86464F86D5310763D /* CurrentMotivation.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		0408C097B1C99F878475E52537D32B22 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		058E06F637891EECC2FBE810CDA0BF52 /* MotivationsInteractorInput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MotivationsInteractorInput.swift; sourceTree = "<group>"; };
+		07FB4F42A45361FC995A0FF80D476D60 /* CurrentMotivationRouterInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentMotivationRouterInput.swift; sourceTree = "<group>"; };
 		0B022D1A701320E9828D00E78AB8BED7 /* Pods_Motivation.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Motivation.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		0BFA94093158D6990505C90AA1D222DE /* MotivationsDataDisplayManagerImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MotivationsDataDisplayManagerImpl.swift; sourceTree = "<group>"; };
 		0EC8A1CB0C90D85F360FD3E5E12BF899 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -66,31 +113,52 @@
 		1AC722D48DCE145D024D6D14DA3C4C1C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		1D4EFE13CF137130B30984FCB67F6EFE /* MotivationsDataDisplayManagerOutput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MotivationsDataDisplayManagerOutput.swift; sourceTree = "<group>"; };
 		20DE7A7E0A8C815F15E4308774AA30CA /* MotivationsInteractorOutput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MotivationsInteractorOutput.swift; sourceTree = "<group>"; };
+		249E70F9D6A85152FA7A42009A671734 /* CurrentMotivationPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentMotivationPresenter.swift; sourceTree = "<group>"; };
 		2C258AA8B9B648D29F784072BBCA0C88 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		355E1FC5D60F05158B11F74A437D5C4A /* MotivationServiceImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MotivationServiceImpl.swift; sourceTree = "<group>"; };
+		3EB1104568B85489AFDA11319B246B09 /* CurrentMotivationInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentMotivationInteractor.swift; sourceTree = "<group>"; };
+		4459BCDF9FDB9BFFC3E1DC8DEB0264C6 /* CurrentMotivationInteractorOutput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentMotivationInteractorOutput.swift; sourceTree = "<group>"; };
 		448E96C2B02E109F75EDA23ED634A390 /* LocalizationConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocalizationConstants.swift; sourceTree = "<group>"; };
 		4557806F610C6710328BD9821882E045 /* NSObject+ClassNameTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSObject+ClassNameTests.swift"; sourceTree = "<group>"; };
 		47DAC4086C803E8B48AF28A5A0C2B75D /* Launch.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Launch.storyboard; sourceTree = "<group>"; };
+		4910AB84D4618E185F80AF765D77D8EB /* MainInterface.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MainInterface.storyboard; sourceTree = "<group>"; };
+		4BAC89226236819264C3989801CEC291 /* CurrentMotivationViewOutput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentMotivationViewOutput.swift; sourceTree = "<group>"; };
 		4C63BA7FD4233DF4CC4D4EEEBD26AF01 /* Motivation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Motivation.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4E478F4D68F14722053EBBE14BC05947 /* MotivationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MotivationService.swift; sourceTree = "<group>"; };
 		50C3FAF7F55D352EB849AD5AF744C367 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		51935095CBD679E83A97B47540A94436 /* MotivationCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MotivationCollectionViewCell.swift; sourceTree = "<group>"; };
 		5CD663026C93E77FBAB92B8BF4BD59AF /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		5FA84C30FB876A844DC9465A625A301E /* MotivationCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MotivationCollectionViewCell.xib; sourceTree = "<group>"; };
 		60F1FCA14671B0494C9E73652057A52C /* NotificationServiceImpl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationServiceImpl.swift; sourceTree = "<group>"; };
+		69D2837DDA7F56119CC4247890AE708A /* NotificationCenter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NotificationCenter.framework; path = System/Library/Frameworks/NotificationCenter.framework; sourceTree = SDKROOT; };
+		6C64F2FA236F36BE322A198FFD042940 /* Pods-CurrentMotivation.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CurrentMotivation.release.xcconfig"; path = "Pods/Target Support Files/Pods-CurrentMotivation/Pods-CurrentMotivation.release.xcconfig"; sourceTree = "<group>"; };
 		7001D63FC6EDF3AFB5EB3A27E5143B1D /* ShareService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareService.swift; sourceTree = "<group>"; };
 		70D72CDC32EEBE4F5AA68F11185B7858 /* MotivationsInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MotivationsInteractor.swift; sourceTree = "<group>"; };
 		72D347D326BF5E9C1A87D8AE80198223 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Localizable.strings; sourceTree = "<group>"; };
 		7785E56F486B2D6AD3961885DA50AC6E /* Motivation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Motivation.swift; sourceTree = "<group>"; };
+		778EFB29EB67A1DE16F671B1AE0A5E42 /* CurrentMotivationInteractorInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentMotivationInteractorInput.swift; sourceTree = "<group>"; };
+		7B54DDE986740675E512258BC36A2927 /* Pods_CurrentMotivation.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CurrentMotivation.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7F0CE5D4729FB35342FA00F2620A7061 /* ServiceAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceAssembly.swift; sourceTree = "<group>"; };
+		8385D90A2170EFC120CFFB944447C1A1 /* MotivationServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MotivationServiceTests.swift; sourceTree = "<group>"; };
 		8E9D7289610A20899FA6D9B8DB851996 /* String+Localization.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Localization.swift"; sourceTree = "<group>"; };
+		9296775A1D08C9C1E41A6AE2B69059F0 /* CurrentMotivation.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = CurrentMotivation.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		94868E28F4C2D402C6B9C45334D2843F /* NotificationService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationService.swift; sourceTree = "<group>"; };
 		98D9671890A00BB0DE007596D02EDCF8 /* ApplicationAssembly.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApplicationAssembly.swift; sourceTree = "<group>"; };
 		9EC1D5B61D5185B24481B559D91B9273 /* MotivationsAssembly.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MotivationsAssembly.swift; sourceTree = "<group>"; };
 		9FC186DAD77B648C0CC915F1569AF1A1 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		A72537AA9B770EA0F61CD166E945652F /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AF635D6705E44A1638A6E35BB5D403F3 /* Pods-CurrentMotivation.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CurrentMotivation.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CurrentMotivation/Pods-CurrentMotivation.debug.xcconfig"; sourceTree = "<group>"; };
+		AFB0650F09044708C86CD85F6F167C16 /* ServiceAssembly.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServiceAssembly.swift; sourceTree = "<group>"; };
 		B7871E92ACAC3936E5120960C4509B74 /* MotivationsDataDisplayManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MotivationsDataDisplayManager.swift; sourceTree = "<group>"; };
 		B828325D8055379194040F61F0D8FA89 /* Pods-Motivation.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Motivation.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Motivation/Pods-Motivation.debug.xcconfig"; sourceTree = "<group>"; };
+		C3D5030FD67E70F9B1F184DB7F8C4D51 /* CurrentMotivationViewInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentMotivationViewInput.swift; sourceTree = "<group>"; };
 		C41AFD08618F1E2ED77CFF589DAFA97C /* MotivationsRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MotivationsRouter.swift; sourceTree = "<group>"; };
 		C778E3C806EB2477BAFAF7C23E251408 /* NSObject+ClassName.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSObject+ClassName.swift"; sourceTree = "<group>"; };
+		C99DB39388941CF00AD14E58A869BC2B /* ApplicationAssembly.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApplicationAssembly.swift; sourceTree = "<group>"; };
 		CBD2DEF451E5E6268E79C511413156C3 /* MotivationsViewOutput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MotivationsViewOutput.swift; sourceTree = "<group>"; };
+		D8E713E32F8DC59B48967951EB61FB9C /* CurrentMotivationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentMotivationViewController.swift; sourceTree = "<group>"; };
+		D8FD4B48C725141D1D58523B2580E143 /* CurrentMotivationAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentMotivationAssembly.swift; sourceTree = "<group>"; };
+		DC78F910A41E8C769DC8BB95CF756657 /* CurrentMotivationRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentMotivationRouter.swift; sourceTree = "<group>"; };
 		E36B68F6AABFC7D0F0938D9B88C45CE6 /* Pods-Motivation.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Motivation.release.xcconfig"; path = "Pods/Target Support Files/Pods-Motivation/Pods-Motivation.release.xcconfig"; sourceTree = "<group>"; };
 		E5D6914EB14460C34D91527287FFA90F /* Motivation.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; name = Motivation.entitlements; path = ../Motivation.entitlements; sourceTree = "<group>"; };
 		E6CB0753CF01595CE246D156529245B6 /* MotivationsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MotivationsViewController.swift; sourceTree = "<group>"; };
@@ -120,6 +188,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		EA15D045785DEF4EDAFF22DF622BACE6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				968AA8D3E8314926D59486604B190760 /* NotificationCenter.framework in Frameworks */,
+				0320D5A6019DFFACF879366135750BD4 /* Pods_CurrentMotivation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -130,6 +207,14 @@
 				E9201559255810C9F1147110B2509FCC /* ShareServiceImpl.swift */,
 			);
 			path = ShareService;
+			sourceTree = "<group>";
+		};
+		04A368F9881B4A887926E963CF9EAC75 /* Supporting */ = {
+			isa = PBXGroup;
+			children = (
+				A72537AA9B770EA0F61CD166E945652F /* Info.plist */,
+			);
+			path = Supporting;
 			sourceTree = "<group>";
 		};
 		050750ED0B40EB12212CB9969DE9112C /* ApplicationAssembly */ = {
@@ -180,12 +265,39 @@
 			path = BusinessLogicLayer;
 			sourceTree = "<group>";
 		};
+		17D27952BAE0B35F128E8A4F3BF22608 /* PresentationLayer */ = {
+			isa = PBXGroup;
+			children = (
+				1C14830994FDF11B5E141465A522CE13 /* Modules */,
+			);
+			path = PresentationLayer;
+			sourceTree = "<group>";
+		};
 		1A504B8C886A779F071CA1FECA36C969 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				69D2837DDA7F56119CC4247890AE708A /* NotificationCenter.framework */,
+				7B54DDE986740675E512258BC36A2927 /* Pods_CurrentMotivation.framework */,
 				0B022D1A701320E9828D00E78AB8BED7 /* Pods_Motivation.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		1BDB8673D9977A83E33EE772AE18372B /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				9D365D7471BD35AB8384378B1241BD6A /* ApplicationLayer */,
+				17D27952BAE0B35F128E8A4F3BF22608 /* PresentationLayer */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		1C14830994FDF11B5E141465A522CE13 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				37BCE0B35D2AACC2E49E29D4781D59D4 /* CurrentMotivation */,
+			);
+			path = Modules;
 			sourceTree = "<group>";
 		};
 		1C913C8D8F81961D3688742308FA7A8B /* AppDelegates */ = {
@@ -194,6 +306,14 @@
 				B58CE8ADD5F15C2DAB5AEC21E06AF636 /* AppDelegate */,
 			);
 			path = AppDelegates;
+			sourceTree = "<group>";
+		};
+		1E483CA14A6A84EBE1BD9A2347A4D32A /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				4910AB84D4618E185F80AF765D77D8EB /* MainInterface.storyboard */,
+			);
+			path = Storyboard;
 			sourceTree = "<group>";
 		};
 		21F88354A87133589F455CA23E3CC066 /* Assembly */ = {
@@ -231,9 +351,28 @@
 			path = Motivation;
 			sourceTree = "<group>";
 		};
+		37BCE0B35D2AACC2E49E29D4781D59D4 /* CurrentMotivation */ = {
+			isa = PBXGroup;
+			children = (
+				82F587167CC23A272339B7B4D4BBACC5 /* Module */,
+				1E483CA14A6A84EBE1BD9A2347A4D32A /* Storyboard */,
+			);
+			path = CurrentMotivation;
+			sourceTree = "<group>";
+		};
+		3BEB53C1E56ACA2F98E49763E6C1C096 /* MotivationService */ = {
+			isa = PBXGroup;
+			children = (
+				4E478F4D68F14722053EBBE14BC05947 /* MotivationService.swift */,
+				355E1FC5D60F05158B11F74A437D5C4A /* MotivationServiceImpl.swift */,
+			);
+			path = MotivationService;
+			sourceTree = "<group>";
+		};
 		4ECB39779226317AEB1AF53C62D150F7 = {
 			isa = PBXGroup;
 			children = (
+				8F6D96157B2E784A88521079587B471F /* CurrentMotivation */,
 				1A504B8C886A779F071CA1FECA36C969 /* Frameworks */,
 				377906F3E384D71B5CD64DF17A9DFBCF /* Motivation */,
 				95D2FADF6A1E3E93531B8572B5942304 /* Pods */,
@@ -242,9 +381,18 @@
 			);
 			sourceTree = "<group>";
 		};
+		559851319D0F54FB3D0CA4370D08BCC8 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				8385D90A2170EFC120CFFB944447C1A1 /* MotivationServiceTests.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
 		5B2B1DE6A4D4DC91C3AA1B8376232A8D /* Products */ = {
 			isa = PBXGroup;
 			children = (
+				9296775A1D08C9C1E41A6AE2B69059F0 /* CurrentMotivation.appex */,
 				4C63BA7FD4233DF4CC4D4EEEBD26AF01 /* Motivation.app */,
 				0ED1F0697442CCC718D2C16A55047425 /* Tests.xctest */,
 			);
@@ -266,6 +414,16 @@
 				8E9D7289610A20899FA6D9B8DB851996 /* String+Localization.swift */,
 			);
 			path = "String+Localization";
+			sourceTree = "<group>";
+		};
+		6759373F187CF477BAC55911B6409490 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				D8E713E32F8DC59B48967951EB61FB9C /* CurrentMotivationViewController.swift */,
+				C3D5030FD67E70F9B1F184DB7F8C4D51 /* CurrentMotivationViewInput.swift */,
+				4BAC89226236819264C3989801CEC291 /* CurrentMotivationViewOutput.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		6D243AAF55763E98C1DBF4AA324DB04B /* Interactor */ = {
@@ -301,6 +459,7 @@
 		7212E0EF8A8400EA896BDF8C54B79BBE /* Tests */ = {
 			isa = PBXGroup;
 			children = (
+				754B1252DFF4024E89AA957F2133F5C6 /* BusinessLogicLayer */,
 				811AD425DBA7D2D52DE3B3E76B0694D2 /* Extensions */,
 				50C3FAF7F55D352EB849AD5AF744C367 /* Info.plist */,
 			);
@@ -316,12 +475,28 @@
 			path = ApplicationLayer;
 			sourceTree = "<group>";
 		};
+		7406A652C6C51EC8710B035D71CA007B /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				249E70F9D6A85152FA7A42009A671734 /* CurrentMotivationPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
 		74FBC11370E9CAD958C0BDB27DFB684E /* NSObject+ClassName */ = {
 			isa = PBXGroup;
 			children = (
 				C778E3C806EB2477BAFAF7C23E251408 /* NSObject+ClassName.swift */,
 			);
 			path = "NSObject+ClassName";
+			sourceTree = "<group>";
+		};
+		754B1252DFF4024E89AA957F2133F5C6 /* BusinessLogicLayer */ = {
+			isa = PBXGroup;
+			children = (
+				559851319D0F54FB3D0CA4370D08BCC8 /* Services */,
+			);
+			path = BusinessLogicLayer;
 			sourceTree = "<group>";
 		};
 		811AD425DBA7D2D52DE3B3E76B0694D2 /* Extensions */ = {
@@ -342,6 +517,18 @@
 			path = DataDisplayManager;
 			sourceTree = "<group>";
 		};
+		82F587167CC23A272339B7B4D4BBACC5 /* Module */ = {
+			isa = PBXGroup;
+			children = (
+				F0B2CB1202A7E63DC36D48C995B58115 /* Assembly */,
+				C7E747B55DEFBF44B5A73D8A7BF8120F /* Interactor */,
+				7406A652C6C51EC8710B035D71CA007B /* Presenter */,
+				EDEEACF968F35B12650F197151EF3E0A /* Router */,
+				6759373F187CF477BAC55911B6409490 /* View */,
+			);
+			path = Module;
+			sourceTree = "<group>";
+		};
 		88B142F2C81ADE6248A29EDFC7441EB4 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
@@ -350,6 +537,23 @@
 				0DFA464AD1E53272C95EC794CCB42122 /* UIWindow+TopViewController */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		8A412C04B719BD11396703C470D14743 /* ApplicationAssembly */ = {
+			isa = PBXGroup;
+			children = (
+				C99DB39388941CF00AD14E58A869BC2B /* ApplicationAssembly.swift */,
+			);
+			path = ApplicationAssembly;
+			sourceTree = "<group>";
+		};
+		8F6D96157B2E784A88521079587B471F /* CurrentMotivation */ = {
+			isa = PBXGroup;
+			children = (
+				1BDB8673D9977A83E33EE772AE18372B /* Classes */,
+				04A368F9881B4A887926E963CF9EAC75 /* Supporting */,
+			);
+			path = CurrentMotivation;
 			sourceTree = "<group>";
 		};
 		93A4FC4C8274EA9B3709907C1077E28C /* Supporting Files */ = {
@@ -378,6 +582,8 @@
 		95D2FADF6A1E3E93531B8572B5942304 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
+				AF635D6705E44A1638A6E35BB5D403F3 /* Pods-CurrentMotivation.debug.xcconfig */,
+				6C64F2FA236F36BE322A198FFD042940 /* Pods-CurrentMotivation.release.xcconfig */,
 				B828325D8055379194040F61F0D8FA89 /* Pods-Motivation.debug.xcconfig */,
 				E36B68F6AABFC7D0F0938D9B88C45CE6 /* Pods-Motivation.release.xcconfig */,
 			);
@@ -391,6 +597,14 @@
 				5FA84C30FB876A844DC9465A625A301E /* MotivationCollectionViewCell.xib */,
 			);
 			path = MotivationCollectionViewCell;
+			sourceTree = "<group>";
+		};
+		9D365D7471BD35AB8384378B1241BD6A /* ApplicationLayer */ = {
+			isa = PBXGroup;
+			children = (
+				D7C6416321911E9D96AF0C838C176607 /* Assemblies */,
+			);
+			path = ApplicationLayer;
 			sourceTree = "<group>";
 		};
 		A208D2750391D47D8A081E371C875867 /* NSObject+ClassName */ = {
@@ -427,6 +641,16 @@
 			path = Localization;
 			sourceTree = "<group>";
 		};
+		C7E747B55DEFBF44B5A73D8A7BF8120F /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				3EB1104568B85489AFDA11319B246B09 /* CurrentMotivationInteractor.swift */,
+				778EFB29EB67A1DE16F671B1AE0A5E42 /* CurrentMotivationInteractorInput.swift */,
+				4459BCDF9FDB9BFFC3E1DC8DEB0264C6 /* CurrentMotivationInteractorOutput.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
 		C8D783B0F55F3FC87644BDD4A219F14D /* Router */ = {
 			isa = PBXGroup;
 			children = (
@@ -455,6 +679,15 @@
 				D7EA59473D72A946D1419C016BA12E60 /* Storyboard */,
 			);
 			path = Motivations;
+			sourceTree = "<group>";
+		};
+		D7C6416321911E9D96AF0C838C176607 /* Assemblies */ = {
+			isa = PBXGroup;
+			children = (
+				8A412C04B719BD11396703C470D14743 /* ApplicationAssembly */,
+				F3BDF519AF604973EC7562410E7B1C8E /* ServiceAssembly */,
+			);
+			path = Assemblies;
 			sourceTree = "<group>";
 		};
 		D7EA59473D72A946D1419C016BA12E60 /* Storyboard */ = {
@@ -490,6 +723,31 @@
 			path = Constants;
 			sourceTree = "<group>";
 		};
+		EDEEACF968F35B12650F197151EF3E0A /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				DC78F910A41E8C769DC8BB95CF756657 /* CurrentMotivationRouter.swift */,
+				07FB4F42A45361FC995A0FF80D476D60 /* CurrentMotivationRouterInput.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		F0B2CB1202A7E63DC36D48C995B58115 /* Assembly */ = {
+			isa = PBXGroup;
+			children = (
+				D8FD4B48C725141D1D58523B2580E143 /* CurrentMotivationAssembly.swift */,
+			);
+			path = Assembly;
+			sourceTree = "<group>";
+		};
+		F3BDF519AF604973EC7562410E7B1C8E /* ServiceAssembly */ = {
+			isa = PBXGroup;
+			children = (
+				AFB0650F09044708C86CD85F6F167C16 /* ServiceAssembly.swift */,
+			);
+			path = ServiceAssembly;
+			sourceTree = "<group>";
+		};
 		FB2F9DA37D304F153EB25296BAA96F69 /* Presenter */ = {
 			isa = PBXGroup;
 			children = (
@@ -510,6 +768,7 @@
 		FDEA69877E9783AE71EBF0E4E16F7A70 /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				3BEB53C1E56ACA2F98E49763E6C1C096 /* MotivationService */,
 				EA24FEFA19123AE476E1B42B38E22FC4 /* NotificationService */,
 				01B6298F8C3318A3DDF1484903931BA4 /* ShareService */,
 			);
@@ -547,15 +806,36 @@
 				EDE636B917A362C7C18F2813E1AB87B3 /* Resources */,
 				215E983B7428BC5439334673B4B68761 /* [CP] Embed Pods Frameworks */,
 				E660EC1DE84335C67508848BE7C32E07 /* [CP] Copy Pods Resources */,
+				3BF163291EA006E64A734295890543DD /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				A22D13FAF452F2F5BF34F349D9070903 /* PBXTargetDependency */,
 			);
 			name = Motivation;
 			productName = Motivation;
 			productReference = 4C63BA7FD4233DF4CC4D4EEEBD26AF01 /* Motivation.app */;
 			productType = "com.apple.product-type.application";
+		};
+		71780671B6A8565CBBC4991190D28756 /* CurrentMotivation */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 58181C0CFF64C7D0575BDC85A5CAB02D /* Build configuration list for PBXNativeTarget "CurrentMotivation" */;
+			buildPhases = (
+				A42161BDB034354CDF725BE6B02DD126 /* [CP] Check Pods Manifest.lock */,
+				D05769F75563A22C8386B6FC49585266 /* Sources */,
+				EA15D045785DEF4EDAFF22DF622BACE6 /* Frameworks */,
+				1991297D95810485E4167DF2CBF463EB /* Resources */,
+				FE0F54C308D5462E09488498534DD8D5 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CurrentMotivation;
+			productName = CurrentMotivation;
+			productReference = 9296775A1D08C9C1E41A6AE2B69059F0 /* CurrentMotivation.appex */;
+			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -583,6 +863,11 @@
 							};
 						};
 					};
+					71780671B6A8565CBBC4991190D28756 = {
+						CreatedOnToolsVersion = 9.0;
+						DevelopmentTeam = V7Y4KEU8VJ;
+						ProvisioningStyle = Automatic;
+					};
 				};
 			};
 			buildConfigurationList = 5AE2D190F5CF8EBAE57AACDE99080353 /* Build configuration list for PBXProject "Motivation" */;
@@ -600,12 +885,22 @@
 			projectRoot = "";
 			targets = (
 				1E4EEB8DBB5B20CA825327048AA38199 /* Motivation */,
+				71780671B6A8565CBBC4991190D28756 /* CurrentMotivation */,
 				1A0979E172C02B89645B0FFF0D474EFD /* Tests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		1991297D95810485E4167DF2CBF463EB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				52E5CE3F2B89964AE7B76BA6796FAB62 /* Localizable.strings in Resources */,
+				BE725EF41BAC6E7DA83714AD0F8BDBA8 /* MainInterface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		69A25BC7DC7F28848DDBBFD4D32D1E12 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -675,6 +970,24 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		A42161BDB034354CDF725BE6B02DD126 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CurrentMotivation-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
 		E660EC1DE84335C67508848BE7C32E07 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -690,6 +1003,21 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Motivation/Pods-Motivation-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		FE0F54C308D5462E09488498534DD8D5 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CurrentMotivation/Pods-CurrentMotivation-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -702,6 +1030,8 @@
 				4EF88F86C3E0E2A15BDDC9D170D8AF2E /* LocalizationConstants.swift in Sources */,
 				C9AE2302FF9B0085C4EC10C2F92982AC /* Motivation.swift in Sources */,
 				92110FD6822553A73D386A6C659BB4E6 /* MotivationCollectionViewCell.swift in Sources */,
+				264D1CB8EB78DA1FB9C5C6D8EC977F34 /* MotivationService.swift in Sources */,
+				514C208FBFAADAFC23D4EB0E65203B8D /* MotivationServiceImpl.swift in Sources */,
 				334B8DDB1CF58B5D29979EEE9BF4A9D6 /* MotivationsAssembly.swift in Sources */,
 				BC3A14F4387E3F7F6972ED27B8ED8638 /* MotivationsDataDisplayManager.swift in Sources */,
 				CAE216626DEB6BB8CD466F1603C1E11F /* MotivationsDataDisplayManagerImpl.swift in Sources */,
@@ -730,14 +1060,44 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				92C953F995AD83F07811E004ACEF71B8 /* MotivationServiceTests.swift in Sources */,
 				6A382CF2E98254B32FC47F5ADF99B98E /* NSObject+ClassName.swift in Sources */,
 				6D92F7037C6DDC43EBA201D075666408 /* NSObject+ClassNameTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D05769F75563A22C8386B6FC49585266 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F76789122920C1EA29E5D3EA971DB6A4 /* ApplicationAssembly.swift in Sources */,
+				9B5365FAA7D6D7D36A0939545B2F0C97 /* CurrentMotivationAssembly.swift in Sources */,
+				B674BD4189C1DBB5D3C50C34D8834D39 /* CurrentMotivationInteractor.swift in Sources */,
+				FFFE6A2F184FF8E2AEADD5DB90C84A65 /* CurrentMotivationInteractorInput.swift in Sources */,
+				060EB78AF7794DCDE6402D838B31B14F /* CurrentMotivationInteractorOutput.swift in Sources */,
+				3D4BCF7CD9D409C05331225CF0442638 /* CurrentMotivationPresenter.swift in Sources */,
+				B8CB1EB7CF04016EFF49B8E189811921 /* CurrentMotivationRouter.swift in Sources */,
+				E1CDEA4CA3A2F1DAED685C891DB5AC18 /* CurrentMotivationRouterInput.swift in Sources */,
+				2BB9D8E07A15CA01963B6AA90A2700A7 /* CurrentMotivationViewController.swift in Sources */,
+				065688FB57D8FFD604A8D90536C83CC1 /* CurrentMotivationViewInput.swift in Sources */,
+				2493A70D1722E5F381C924781B8F0EAA /* CurrentMotivationViewOutput.swift in Sources */,
+				A5B1471C06E2C1423BB70EF2F6FEB9EE /* LocalizationConstants.swift in Sources */,
+				ED08875B7810495A37FB2A0FFAAF8A0F /* Motivation.swift in Sources */,
+				9134F6AA82411467AB4D29BF565626FC /* MotivationService.swift in Sources */,
+				1688F0802D2C52B30D776A876DDF4DA0 /* MotivationServiceImpl.swift in Sources */,
+				F708D046B856509C5EB119B6405BF989 /* ServiceAssembly.swift in Sources */,
+				F68D11A312477AB904D34F124B2AE257 /* String+Localization.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		A22D13FAF452F2F5BF34F349D9070903 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 71780671B6A8565CBBC4991190D28756 /* CurrentMotivation */;
+			targetProxy = 321E4E4895E97ADF4A609B8D12DF5A6C /* PBXContainerItemProxy */;
+		};
 		B3CB136EBEE9C6126C49E0BAF424BCB8 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 1E4EEB8DBB5B20CA825327048AA38199 /* Motivation */;
@@ -791,8 +1151,10 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = B828325D8055379194040F61F0D8FA89 /* Pods-Motivation.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = Motivation/Motivation.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				DEVELOPMENT_TEAM = V7Y4KEU8VJ;
 				INFOPLIST_FILE = "$(SRCROOT)/Motivation/Supporting Files/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
@@ -875,12 +1237,35 @@
 			};
 			name = Release;
 		};
+		CC61C901EF23DBDFAFB7E4BFA1E20F87 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AF635D6705E44A1638A6E35BB5D403F3 /* Pods-CurrentMotivation.debug.xcconfig */;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = V7Y4KEU8VJ;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = "$(SRCROOT)/CurrentMotivation/Supporting/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.zarochintsev.motivation-box.CurrentMotivation";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
 		D687A81D291CB646F6754D0E0730F052 /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = E36B68F6AABFC7D0F0938D9B88C45CE6 /* Pods-Motivation.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = Motivation/Motivation.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				DEVELOPMENT_TEAM = V7Y4KEU8VJ;
 				INFOPLIST_FILE = "$(SRCROOT)/Motivation/Supporting Files/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
@@ -950,9 +1335,39 @@
 			};
 			name = Debug;
 		};
+		ED9D4408E0EE49425EA6F7AD1201ECC8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6C64F2FA236F36BE322A198FFD042940 /* Pods-CurrentMotivation.release.xcconfig */;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = V7Y4KEU8VJ;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = "$(SRCROOT)/CurrentMotivation/Supporting/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.zarochintsev.motivation-box.CurrentMotivation";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		58181C0CFF64C7D0575BDC85A5CAB02D /* Build configuration list for PBXNativeTarget "CurrentMotivation" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CC61C901EF23DBDFAFB7E4BFA1E20F87 /* Debug */,
+				ED9D4408E0EE49425EA6F7AD1201ECC8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		5AE2D190F5CF8EBAE57AACDE99080353 /* Build configuration list for PBXProject "Motivation" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

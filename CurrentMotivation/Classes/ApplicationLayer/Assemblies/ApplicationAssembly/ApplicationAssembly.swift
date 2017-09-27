@@ -1,5 +1,5 @@
 //
-// MotivationsInteractor.swift
+// ApplicationAssembly.swift
 //
 // MIT License
 //
@@ -24,29 +24,33 @@
 // SOFTWARE.
 //
 
-import UIKit
+import Swinject
+import SwinjectStoryboard
 
-class MotivationsInteractor {
+final class ApplicationAssembly {
     
-    // MARK: - General
+    var assembler: Assembler
     
-    /// Reference to the Presenter's output interface.
-    weak var output: MotivationsInteractorOutput!
+    /// Use default dependency
+    class var assembler: Assembler {
+        return Assembler([
+            ServiceAssembly(),
+            CurrentMotivationAssembly()
+        ])
+    }
     
-    // MARK: - Services
+    // If you want use custom Assembler
+    init(with assemblies: [Assembly]) {
+        assembler = Assembler(assemblies)
+    }
     
-    var motivationService: MotivationService!
 }
 
-// MAKR: - MotivationsInteractorInput
-
-extension MotivationsInteractor: MotivationsInteractorInput {
+// Inject dependency in Main Storyboard
+extension SwinjectStoryboard {
     
-    func requestMotivations() {
-        motivationService.requestMotivations { [weak self] (elements: [Motivation]) in
-            guard let weakSelf = self else { return }
-            weakSelf.output.updatedMotivations(elements)
-        }
-        
+    public static func setup() {
+        defaultContainer = ApplicationAssembly.assembler.resolver as! Container
     }
+    
 }
