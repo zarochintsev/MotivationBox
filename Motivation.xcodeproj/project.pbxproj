@@ -381,6 +381,14 @@
 			);
 			sourceTree = "<group>";
 		};
+		559851319D0F54FB3D0CA4370D08BCC8 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				8385D90A2170EFC120CFFB944447C1A1 /* MotivationServiceTests.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
 		5B2B1DE6A4D4DC91C3AA1B8376232A8D /* Products */ = {
 			isa = PBXGroup;
 			children = (
@@ -481,6 +489,14 @@
 				C778E3C806EB2477BAFAF7C23E251408 /* NSObject+ClassName.swift */,
 			);
 			path = "NSObject+ClassName";
+			sourceTree = "<group>";
+		};
+		754B1252DFF4024E89AA957F2133F5C6 /* BusinessLogicLayer */ = {
+			isa = PBXGroup;
+			children = (
+				559851319D0F54FB3D0CA4370D08BCC8 /* Services */,
+			);
+			path = BusinessLogicLayer;
 			sourceTree = "<group>";
 		};
 		811AD425DBA7D2D52DE3B3E76B0694D2 /* Extensions */ = {
@@ -730,22 +746,6 @@
 				AFB0650F09044708C86CD85F6F167C16 /* ServiceAssembly.swift */,
 			);
 			path = ServiceAssembly;
-			sourceTree = "<group>";
-		};
-		754B1252DFF4024E89AA957F2133F5C6 /* BusinessLogicLayer */ = {
-			isa = PBXGroup;
-			children = (
-				559851319D0F54FB3D0CA4370D08BCC8 /* Services */,
-			);
-			path = BusinessLogicLayer;
-			sourceTree = "<group>";
-		};
-		559851319D0F54FB3D0CA4370D08BCC8 /* Services */ = {
-			isa = PBXGroup;
-			children = (
-				8385D90A2170EFC120CFFB944447C1A1 /* MotivationServiceTests.swift */,
-			);
-			path = Services;
 			sourceTree = "<group>";
 		};
 		FB2F9DA37D304F153EB25296BAA96F69 /* Presenter */ = {
