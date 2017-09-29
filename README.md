@@ -20,7 +20,8 @@ Looking for ways to get inspiration? Check out our Motivation Box App! Every day
 
 ## Authors
 
-- [Alex Zarochintsev](https://twitter.com/zarochintsev)
+- [Alex Zarochintsev](https://www.linkedin.com/in/zarochintsev)
+- [Olya Syrotynska](https://www.linkedin.com/in/olga-syrotynska-138668129/)
 
 ## License
 
