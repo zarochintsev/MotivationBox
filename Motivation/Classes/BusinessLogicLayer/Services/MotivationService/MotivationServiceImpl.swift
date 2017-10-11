@@ -13,7 +13,7 @@ class MotivationServiceImpl: NSObject {
     // MARK: - Constants
     
     fileprivate struct C {
-        static let startIndex = 89
+        static let startIndex = 39
     }
 }
 
