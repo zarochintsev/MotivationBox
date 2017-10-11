@@ -225,14 +225,6 @@
 			path = ApplicationAssembly;
 			sourceTree = "<group>";
 		};
-		744218CDE55FC7F1F3D5ADA607120ECD /* ServiceAssembly */ = {
-			isa = PBXGroup;
-			children = (
-				10FD003D49D7B75CB0D5E3603C3591DC /* ServiceAssembly.swift */,
-			);
-			path = ServiceAssembly;
-			sourceTree = "<group>";
-		};
 		0C180A8D5A07831768C321788B474285 /* LaunchSystem */ = {
 			isa = PBXGroup;
 			children = (
@@ -483,6 +475,14 @@
 			path = Presenter;
 			sourceTree = "<group>";
 		};
+		744218CDE55FC7F1F3D5ADA607120ECD /* ServiceAssembly */ = {
+			isa = PBXGroup;
+			children = (
+				10FD003D49D7B75CB0D5E3603C3591DC /* ServiceAssembly.swift */,
+			);
+			path = ServiceAssembly;
+			sourceTree = "<group>";
+		};
 		74FBC11370E9CAD958C0BDB27DFB684E /* NSObject+ClassName */ = {
 			isa = PBXGroup;
 			children = (
@@ -527,6 +527,14 @@
 				6759373F187CF477BAC55911B6409490 /* View */,
 			);
 			path = Module;
+			sourceTree = "<group>";
+		};
+		88A7A6792319F6D9CB58D7D11930169B /* Assemblies */ = {
+			isa = PBXGroup;
+			children = (
+				744218CDE55FC7F1F3D5ADA607120ECD /* ServiceAssembly */,
+			);
+			path = Assemblies;
 			sourceTree = "<group>";
 		};
 		88B142F2C81ADE6248A29EDFC7441EB4 /* Extensions */ = {
@@ -746,14 +754,6 @@
 				AFB0650F09044708C86CD85F6F167C16 /* ServiceAssembly.swift */,
 			);
 			path = ServiceAssembly;
-			sourceTree = "<group>";
-		};
-		88A7A6792319F6D9CB58D7D11930169B /* Assemblies */ = {
-			isa = PBXGroup;
-			children = (
-				744218CDE55FC7F1F3D5ADA607120ECD /* ServiceAssembly */,
-			);
-			path = Assemblies;
 			sourceTree = "<group>";
 		};
 		FB2F9DA37D304F153EB25296BAA96F69 /* Presenter */ = {
@@ -1216,7 +1216,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
@@ -1333,7 +1333,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
