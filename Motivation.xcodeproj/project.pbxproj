@@ -13,7 +13,6 @@
 		05DA805C7DBD9DBE534F4EB9797BF078 /* MotivationsRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C41AFD08618F1E2ED77CFF589DAFA97C /* MotivationsRouter.swift */; };
 		060EB78AF7794DCDE6402D838B31B14F /* CurrentMotivationInteractorOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4459BCDF9FDB9BFFC3E1DC8DEB0264C6 /* CurrentMotivationInteractorOutput.swift */; };
 		065688FB57D8FFD604A8D90536C83CC1 /* CurrentMotivationViewInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3D5030FD67E70F9B1F184DB7F8C4D51 /* CurrentMotivationViewInput.swift */; };
-		0D3831677D75FACE01FB88D4243537A5 /* ServiceAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F0CE5D4729FB35342FA00F2620A7061 /* ServiceAssembly.swift */; };
 		1688F0802D2C52B30D776A876DDF4DA0 /* MotivationServiceImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 355E1FC5D60F05158B11F74A437D5C4A /* MotivationServiceImpl.swift */; };
 		1CCEAACE3648823CBA3A4390B256F9C9 /* String+Localization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E9D7289610A20899FA6D9B8DB851996 /* String+Localization.swift */; };
 		2312AF86C93D751CD9D456968B1854CF /* ShareServiceImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9201559255810C9F1147110B2509FCC /* ShareServiceImpl.swift */; };
@@ -49,6 +48,7 @@
 		A5B1471C06E2C1423BB70EF2F6FEB9EE /* LocalizationConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 448E96C2B02E109F75EDA23ED634A390 /* LocalizationConstants.swift */; };
 		B2AAF023FA79C3F428DDF77EAA9633C2 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E7486A38904FF39A888CA78371243E2F /* GoogleService-Info.plist */; };
 		B4179BFD88CCD0834B54CA0529BC0401 /* ShareService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7001D63FC6EDF3AFB5EB3A27E5143B1D /* ShareService.swift */; };
+		B4B66AE1B85BE3FDB4B41E48A25D6D75 /* ServiceAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10FD003D49D7B75CB0D5E3603C3591DC /* ServiceAssembly.swift */; };
 		B674BD4189C1DBB5D3C50C34D8834D39 /* CurrentMotivationInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EB1104568B85489AFDA11319B246B09 /* CurrentMotivationInteractor.swift */; };
 		B8CB1EB7CF04016EFF49B8E189811921 /* CurrentMotivationRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC78F910A41E8C769DC8BB95CF756657 /* CurrentMotivationRouter.swift */; };
 		BC3A14F4387E3F7F6972ED27B8ED8638 /* MotivationsDataDisplayManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7871E92ACAC3936E5120960C4509B74 /* MotivationsDataDisplayManager.swift */; };
@@ -110,6 +110,7 @@
 		0BFA94093158D6990505C90AA1D222DE /* MotivationsDataDisplayManagerImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MotivationsDataDisplayManagerImpl.swift; sourceTree = "<group>"; };
 		0EC8A1CB0C90D85F360FD3E5E12BF899 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0ED1F0697442CCC718D2C16A55047425 /* Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		10FD003D49D7B75CB0D5E3603C3591DC /* ServiceAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceAssembly.swift; sourceTree = "<group>"; };
 		1AC722D48DCE145D024D6D14DA3C4C1C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		1D4EFE13CF137130B30984FCB67F6EFE /* MotivationsDataDisplayManagerOutput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MotivationsDataDisplayManagerOutput.swift; sourceTree = "<group>"; };
 		20DE7A7E0A8C815F15E4308774AA30CA /* MotivationsInteractorOutput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MotivationsInteractorOutput.swift; sourceTree = "<group>"; };
@@ -138,7 +139,6 @@
 		7785E56F486B2D6AD3961885DA50AC6E /* Motivation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Motivation.swift; sourceTree = "<group>"; };
 		778EFB29EB67A1DE16F671B1AE0A5E42 /* CurrentMotivationInteractorInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentMotivationInteractorInput.swift; sourceTree = "<group>"; };
 		7B54DDE986740675E512258BC36A2927 /* Pods_CurrentMotivation.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CurrentMotivation.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		7F0CE5D4729FB35342FA00F2620A7061 /* ServiceAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceAssembly.swift; sourceTree = "<group>"; };
 		8385D90A2170EFC120CFFB944447C1A1 /* MotivationServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MotivationServiceTests.swift; sourceTree = "<group>"; };
 		8E9D7289610A20899FA6D9B8DB851996 /* String+Localization.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Localization.swift"; sourceTree = "<group>"; };
 		9296775A1D08C9C1E41A6AE2B69059F0 /* CurrentMotivation.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = CurrentMotivation.appex; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -225,14 +225,6 @@
 			path = ApplicationAssembly;
 			sourceTree = "<group>";
 		};
-		06EE067AD6837BE3D1B5695AEBC34593 /* ServiceAssembly */ = {
-			isa = PBXGroup;
-			children = (
-				7F0CE5D4729FB35342FA00F2620A7061 /* ServiceAssembly.swift */,
-			);
-			path = ServiceAssembly;
-			sourceTree = "<group>";
-		};
 		0C180A8D5A07831768C321788B474285 /* LaunchSystem */ = {
 			isa = PBXGroup;
 			children = (
@@ -260,6 +252,7 @@
 		15F5CACA9C38678619127EC61453F706 /* BusinessLogicLayer */ = {
 			isa = PBXGroup;
 			children = (
+				88A7A6792319F6D9CB58D7D11930169B /* Assemblies */,
 				FDEA69877E9783AE71EBF0E4E16F7A70 /* Services */,
 			);
 			path = BusinessLogicLayer;
@@ -336,7 +329,6 @@
 			isa = PBXGroup;
 			children = (
 				050750ED0B40EB12212CB9969DE9112C /* ApplicationAssembly */,
-				06EE067AD6837BE3D1B5695AEBC34593 /* ServiceAssembly */,
 			);
 			path = Assemblies;
 			sourceTree = "<group>";
@@ -483,6 +475,14 @@
 			path = Presenter;
 			sourceTree = "<group>";
 		};
+		744218CDE55FC7F1F3D5ADA607120ECD /* ServiceAssembly */ = {
+			isa = PBXGroup;
+			children = (
+				10FD003D49D7B75CB0D5E3603C3591DC /* ServiceAssembly.swift */,
+			);
+			path = ServiceAssembly;
+			sourceTree = "<group>";
+		};
 		74FBC11370E9CAD958C0BDB27DFB684E /* NSObject+ClassName */ = {
 			isa = PBXGroup;
 			children = (
@@ -527,6 +527,14 @@
 				6759373F187CF477BAC55911B6409490 /* View */,
 			);
 			path = Module;
+			sourceTree = "<group>";
+		};
+		88A7A6792319F6D9CB58D7D11930169B /* Assemblies */ = {
+			isa = PBXGroup;
+			children = (
+				744218CDE55FC7F1F3D5ADA607120ECD /* ServiceAssembly */,
+			);
+			path = Assemblies;
 			sourceTree = "<group>";
 		};
 		88B142F2C81ADE6248A29EDFC7441EB4 /* Extensions */ = {
@@ -1048,7 +1056,7 @@
 				9C27A1D505FBE67FF8562B876FAD2C6E /* NSObject+ClassName.swift in Sources */,
 				048F6DF4975AFB52ACCA5EDB479F3E1A /* NotificationService.swift in Sources */,
 				DF7BC7CAC22330FF3A3D3C4D4E727F08 /* NotificationServiceImpl.swift in Sources */,
-				0D3831677D75FACE01FB88D4243537A5 /* ServiceAssembly.swift in Sources */,
+				B4B66AE1B85BE3FDB4B41E48A25D6D75 /* ServiceAssembly.swift in Sources */,
 				B4179BFD88CCD0834B54CA0529BC0401 /* ShareService.swift in Sources */,
 				2312AF86C93D751CD9D456968B1854CF /* ShareServiceImpl.swift in Sources */,
 				1CCEAACE3648823CBA3A4390B256F9C9 /* String+Localization.swift in Sources */,
@@ -1208,7 +1216,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
@@ -1325,7 +1333,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
